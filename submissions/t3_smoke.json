@@ -1,0 +1,26 @@
+{
+  "runs": [
+    "runs\\t3_smoke"
+  ],
+  "n_models": 1,
+  "n_test": 20,
+  "tta": true,
+  "refine": false,
+  "unit": "pixel",
+  "oof": [
+    {
+      "run": "t3_smoke",
+      "n": 16,
+      "oof_mcrmse": 0.007912185043096542
+    }
+  ],
+  "out": "submissions\\t3_smoke.csv",
+  "pred_min": [
+    1175.3755452632904,
+    980.7016632556914
+  ],
+  "pred_max": [
+    1701.898738861084,
+    1190.433650970459
+  ]
+}

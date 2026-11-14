@@ -1,0 +1,49 @@
+[19:17:15] 设备: CUDA:NVIDIA GeForce RTX 4060 Laptop GPU (8.0 GB), torch=2.11.0+cu128, cuda=12.8
+[19:17:15] 参数: {"data": "data/raw/2026task2", "cache": null, "out": null, "tag": "smoke", "model": "convnext_tiny", "img_size": 128, "no_pretrained": false, "drop_path": 0.1, "epochs": 2, "batch_size": 128, "lr": 0.0003, "wd": 0.05, "warmup_epochs": 3.0, "label_smoothing": 0.1, "mixup": 0.2, "cutmix": 1.0, "mixup_prob": 0.5, "no_mix_last": 5, "ema_decay": 0.999, "grad_clip": 5.0, "folds": 5, "fold": 0, "seed": 42, "tta": 1, "limit_frac": 0.1, "log_interval": 10}
+[19:17:17] 
+数据根目录: D:\东大\kaggle\data\raw\2026task2\fer_data\fer_data
+训练集: 28275 张   测试集: 7065 张
+样例提交: D:\东大\kaggle\data\raw\2026task2\submission.csv
+
+训练集类别分布:
+    [0] Angry        3963  (14.02%)
+    [1] Fear         4097  (14.49%)
+    [2] Happy        7192  (25.44%)
+    [3] Neutral      4959  (17.54%)
+    [4] Sad          4862  (17.20%)
+    [5] Surprise     3202  (11.32%)
+[19:17:17] 样例提交列名与顺序以 D:\东大\kaggle\data\raw\2026task2\submission.csv 为准
+[19:17:17] ===== fold 0  训练 2209 / 验证 5655 =====
+[19:18:01]   epoch   1 step 10/18 loss=1.8294 lr=5.56e-05
+[19:19:03]   epoch   1/2  loss=1.7632  acc_raw=0.4186  acc_ema=0.4025  耗时 1m44s
+[19:19:04]   * 新的最佳：0.4186（raw 权重, epoch 1）
+[19:19:05]   epoch   2 step 10/18 loss=1.5770 lr=1.56e-04
+[19:19:10]   epoch   2/2  loss=1.5536  acc_raw=0.4895  acc_ema=0.4870  耗时 6s
+[19:19:10]   * 新的最佳：0.4895（raw 权重, epoch 2）
+[19:19:13] fold 0 最佳验证准确率 = 0.4895 (epoch 2, raw 权重)
+[19:19:13] 混淆矩阵（行=真值, 列=预测）:
+           Angry    Fear   Happy  Neutra     Sad  Surpri
+  Angry       39     128     251     178     137      60
+   Fear       18     242     159     136     105     159
+  Happy        5      56    1290      33      17      38
+ Neutra        9     112     197     526     120      28
+    Sad       17     226     176     255     263      35
+ Surpri        4      53     103      60      12     408
+
+              precision    recall  f1-score   support
+
+       Angry     0.4239    0.0492    0.0881       793
+        Fear     0.2962    0.2955    0.2958       819
+       Happy     0.5928    0.8965    0.7137      1439
+     Neutral     0.4428    0.5302    0.4826       992
+         Sad     0.4021    0.2706    0.3235       972
+    Surprise     0.5604    0.6375    0.5965       640
+
+    accuracy                         0.4895      5655
+   macro avg     0.4530    0.4466    0.4167      5655
+weighted avg     0.4634    0.4895    0.4446      5655
+
+[19:19:37] fold 0 测试集概率完成（TTA 视角 1）
+[19:19:37] 全部折完成:
+[19:19:37]   fold 0: best=0.4895 (raw) 耗时 2m18s
+[19:19:37] 各折最终 OOF 准确率均值 = 0.4895

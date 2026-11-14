@@ -1,0 +1,129 @@
+[22:16:39] 设备: CUDA:NVIDIA GeForce RTX 4060 Laptop GPU (8.0 GB), torch=2.11.0+cu128, cuda=12.8
+[22:16:39] 参数: {'data': 'data/task3', 'backbone': 'convnext_tiny', 'img_size': 512, 'epochs': 50, 'folds': 5, 'fold': -1, 'batch_size': 6, 'lr': 0.0004, 'weight_decay': 0.05, 'warmup_epochs': 3.0, 'head_dim': 64, 'out_stride': 4, 'drop_path': 0.1, 'sigma_ratio': 0.02, 'coord_weight': 0.5, 'rotate': 10.0, 'scale_min': 0.88, 'scale_max': 1.12, 'shift': 0.05, 'hflip': 0.5, 'color_jitter': 0.3, 'ema_decay': 0.999, 'no_ema': False, 'no_pretrained': False, 'seed': 42, 'tag': 't3_cnxt_512', 'out': 'runs', 'cache_mb': 3072, 'limit': 0}
+[22:16:39] 数据布局:
+标签表        : D:\东大\kaggle\data\task3\detection\fovea_localization_train_GT.csv
+  ID 列       : 'data'
+  坐标列      : x='Fovea_X'  y='Fovea_Y'
+  坐标单位    : pixel（像素，提交前需按每张图尺寸换算）
+  训练样本数  : 80
+  x 范围      : [723.7040, 1794.5674]  mean=1446.1119
+  y 范围      : [930.1719, 1182.1610]  mean=1055.7777
+测试图片数    : 20
+sample_submit : D:\东大\kaggle\data\task3\detection\sample_submission.csv
+  提交表形态  : long（长表：每图两行 _X / _Y）
+  提交列名    : ['ImageID', 'value']
+  提交行数    : 40（已解析 40 行）
+[22:16:39] 训练样本 80，测试图片 20，坐标单位 pixel
+[22:16:39] 
+======================================================================
+=== Fold 0: train 64 / val 16
+[22:17:43]   epoch   1  train_loss 9.7076 (heat 9.691 / xy 0.0335)  val MCRMSE 0.04381  EMA 0.04381  -> best(model) 0.04381
+[22:17:46]   epoch   2  train_loss 9.2955 (heat 9.278 / xy 0.0345)  val MCRMSE 0.04289  EMA 0.04342  -> best(model) 0.04289
+[22:17:48]   epoch   3  train_loss 8.0544 (heat 8.039 / xy 0.0317)  val MCRMSE 0.02409  EMA 0.03744  -> best(model) 0.02409
+[22:17:51]   epoch   4  train_loss 6.4533 (heat 6.442 / xy 0.0218)  val MCRMSE 0.00565  EMA 0.00864  -> best(model) 0.00565
+[22:17:54]   epoch   5  train_loss 5.5100  val MCRMSE 0.00774
+[22:18:06]   epoch  10  train_loss 4.8437 (heat 4.843 / xy 0.0012)  val MCRMSE 0.00502  EMA 0.00522  -> best(model) 0.00502
+[22:18:19]   epoch  15  train_loss 4.7679  val MCRMSE 0.00797
+[22:18:32]   epoch  20  train_loss 4.7448  val MCRMSE 0.00610
+[22:18:45]   epoch  25  train_loss 4.7449  val MCRMSE 0.00615
+[22:18:58]   epoch  30  train_loss 4.7363 (heat 4.736 / xy 0.0002)  val MCRMSE 0.00478  EMA 0.00556  -> best(model) 0.00478
+[22:19:10]   epoch  35  train_loss 4.7349  val MCRMSE 0.00579
+[22:19:23]   epoch  40  train_loss 4.7283  val MCRMSE 0.00551
+[22:19:36]   epoch  45  train_loss 4.7283  val MCRMSE 0.00554
+[22:19:49]   epoch  50  train_loss 4.7286  val MCRMSE 0.00545
+[22:20:01]   fold 0 完成: MCRMSE 0.00478  像素误差 mean 15.7 / median 10.7  用时 3m21s
+[22:20:01] 
+======================================================================
+=== Fold 1: train 64 / val 16
+[22:20:06]   epoch   1  train_loss 9.7093 (heat 9.691 / xy 0.0368)  val MCRMSE 0.03692  EMA 0.03693  -> best(model) 0.03692
+[22:20:08]   epoch   2  train_loss 9.3050 (heat 9.286 / xy 0.0375)  val MCRMSE 0.03612  EMA 0.03650  -> best(model) 0.03612
+[22:20:11]   epoch   3  train_loss 8.0598 (heat 8.041 / xy 0.0371)  val MCRMSE 0.01496  EMA 0.03200  -> best(model) 0.01496
+[22:20:14]   epoch   4  train_loss 6.5039 (heat 6.491 / xy 0.0269)  val MCRMSE 0.00835  EMA 0.00508  -> best(ema) 0.00508
+[22:20:16]   epoch   5  train_loss 5.5399 (heat 5.533 / xy 0.0131)  val MCRMSE 0.00493  EMA 0.00514  -> best(model) 0.00493
+[22:20:29]   epoch  10  train_loss 5.0042 (heat 5.002 / xy 0.0053)  val MCRMSE 0.00458  EMA 0.00636  -> best(model) 0.00458
+[22:20:42]   epoch  15  train_loss 4.7925  val MCRMSE 0.00507
+[22:20:49]   epoch  18  train_loss 4.7562 (heat 4.756 / xy 0.0008)  val MCRMSE 0.00456  EMA 0.00469  -> best(model) 0.00456
+[22:20:52]   epoch  19  train_loss 4.7570 (heat 4.757 / xy 0.0005)  val MCRMSE 0.00452  EMA 0.00464  -> best(model) 0.00452
+[22:20:55]   epoch  20  train_loss 4.7551  val MCRMSE 0.00474
+[22:21:05]   epoch  24  train_loss 4.7442 (heat 4.744 / xy 0.0003)  val MCRMSE 0.00446  EMA 0.00483  -> best(model) 0.00446
+[22:21:08]   epoch  25  train_loss 4.7381  val MCRMSE 0.00471
+[22:21:21]   epoch  30  train_loss 4.7371  val MCRMSE 0.00549
+[22:21:33]   epoch  35  train_loss 4.7317  val MCRMSE 0.00503
+[22:21:46]   epoch  40  train_loss 4.7627  val MCRMSE 0.00473
+[22:21:59]   epoch  45  train_loss 4.7314  val MCRMSE 0.00468
+[22:22:12]   epoch  50  train_loss 4.7286  val MCRMSE 0.00470
+[22:22:13]   fold 1 完成: MCRMSE 0.00446  像素误差 mean 13.8 / median 9.7  用时 2m12s
+[22:22:13] 
+======================================================================
+=== Fold 2: train 64 / val 16
+[22:22:16]   epoch   1  train_loss 9.7079 (heat 9.688 / xy 0.0401)  val MCRMSE 0.03322  EMA 0.03323  -> best(model) 0.03322
+[22:22:19]   epoch   2  train_loss 9.2778 (heat 9.261 / xy 0.0332)  val MCRMSE 0.03278  EMA 0.03298  -> best(model) 0.03278
+[22:22:22]   epoch   3  train_loss 7.9383 (heat 7.921 / xy 0.0349)  val MCRMSE 0.01287  EMA 0.02621  -> best(model) 0.01287
+[22:22:24]   epoch   4  train_loss 6.2958 (heat 6.285 / xy 0.0226)  val MCRMSE 0.00372  EMA 0.00402  -> best(model) 0.00372
+[22:22:27]   epoch   5  train_loss 5.4290 (heat 5.423 / xy 0.0116)  val MCRMSE 0.00392  EMA 0.00327  -> best(ema) 0.00327
+[22:22:34]   epoch   8  train_loss 4.9510 (heat 4.950 / xy 0.0026)  val MCRMSE 0.00501  EMA 0.00322  -> best(ema) 0.00322
+[22:22:37]   epoch   9  train_loss 4.8812 (heat 4.879 / xy 0.0035)  val MCRMSE 0.00533  EMA 0.00299  -> best(ema) 0.00299
+[22:22:40]   epoch  10  train_loss 4.8303  val MCRMSE 0.00342
+[22:22:47]   epoch  13  train_loss 4.8489 (heat 4.848 / xy 0.0019)  val MCRMSE 0.00293  EMA 0.00297  -> best(model) 0.00293
+[22:22:50]   epoch  14  train_loss 4.8138 (heat 4.813 / xy 0.0021)  val MCRMSE 0.00292  EMA 0.00298  -> best(model) 0.00292
+[22:22:53]   epoch  15  train_loss 4.8251  val MCRMSE 0.00339
+[22:23:06]   epoch  20  train_loss 4.7623  val MCRMSE 0.00351
+[22:23:13]   epoch  23  train_loss 4.7541 (heat 4.754 / xy 0.0004)  val MCRMSE 0.00280  EMA 0.00311  -> best(model) 0.00280
+[22:23:18]   epoch  25  train_loss 4.7662  val MCRMSE 0.00372
+[22:23:26]   epoch  28  train_loss 4.7382 (heat 4.738 / xy 0.0002)  val MCRMSE 0.00288  EMA 0.00276  -> best(ema) 0.00276
+[22:23:29]   epoch  29  train_loss 4.7430 (heat 4.743 / xy 0.0003)  val MCRMSE 0.00285  EMA 0.00274  -> best(ema) 0.00274
+[22:23:31]   epoch  30  train_loss 4.7405 (heat 4.740 / xy 0.0002)  val MCRMSE 0.00279  EMA 0.00271  -> best(ema) 0.00271
+[22:23:36]   epoch  32  train_loss 4.7340 (heat 4.734 / xy 0.0002)  val MCRMSE 0.00260  EMA 0.00271  -> best(model) 0.00260
+[22:23:42]   epoch  34  train_loss 4.7333 (heat 4.733 / xy 0.0002)  val MCRMSE 0.00248  EMA 0.00264  -> best(model) 0.00248
+[22:23:44]   epoch  35  train_loss 4.7300  val MCRMSE 0.00260
+[22:23:52]   epoch  38  train_loss 4.7289 (heat 4.729 / xy 0.0001)  val MCRMSE 0.00244  EMA 0.00254  -> best(model) 0.00244
+[22:23:58]   epoch  40  train_loss 4.7338  val MCRMSE 0.00249
+[22:24:11]   epoch  45  train_loss 4.7286  val MCRMSE 0.00244
+[22:24:23]   epoch  50  train_loss 4.7312  val MCRMSE 0.00248
+[22:24:24]   fold 2 完成: MCRMSE 0.00244  像素误差 mean 8.9 / median 7.8  用时 2m11s
+[22:24:24] 
+======================================================================
+=== Fold 3: train 64 / val 16
+[22:24:30]   epoch   1  train_loss 9.7066 (heat 9.690 / xy 0.0333)  val MCRMSE 0.04576  EMA 0.04577  -> best(model) 0.04576
+[22:24:33]   epoch   2  train_loss 9.2854 (heat 9.267 / xy 0.0363)  val MCRMSE 0.04490  EMA 0.04531  -> best(model) 0.04490
+[22:24:35]   epoch   3  train_loss 7.9943 (heat 7.978 / xy 0.0328)  val MCRMSE 0.02971  EMA 0.04012  -> best(model) 0.02971
+[22:24:38]   epoch   4  train_loss 6.4384 (heat 6.425 / xy 0.0269)  val MCRMSE 0.02732  EMA 0.02090  -> best(ema) 0.02090
+[22:24:41]   epoch   5  train_loss 5.4859 (heat 5.480 / xy 0.0116)  val MCRMSE 0.01005  EMA 0.00837  -> best(ema) 0.00837
+[22:24:53]   epoch  10  train_loss 4.8075 (heat 4.807 / xy 0.0013)  val MCRMSE 0.00789  EMA 0.00814  -> best(model) 0.00789
+[22:25:06]   epoch  15  train_loss 4.7610  val MCRMSE 0.01073
+[22:25:18]   epoch  20  train_loss 4.7617  val MCRMSE 0.00934
+[22:25:31]   epoch  25  train_loss 4.7451  val MCRMSE 0.00811
+[22:25:43]   epoch  30  train_loss 4.7337  val MCRMSE 0.00833
+[22:25:56]   epoch  35  train_loss 4.7297  val MCRMSE 0.00849
+[22:26:09]   epoch  40  train_loss 4.7298  val MCRMSE 0.00820
+[22:26:22]   epoch  45  train_loss 4.7289  val MCRMSE 0.00822
+[22:26:34]   epoch  50  train_loss 4.7282  val MCRMSE 0.00821
+[22:26:35]   fold 3 完成: MCRMSE 0.00789  像素误差 mean 23.1 / median 10.8  用时 2m10s
+[22:26:35] 
+======================================================================
+=== Fold 4: train 64 / val 16
+[22:26:40]   epoch   1  train_loss 9.7061 (heat 9.688 / xy 0.0370)  val MCRMSE 0.03853  EMA 0.03855  -> best(model) 0.03853
+[22:26:42]   epoch   2  train_loss 9.2434 (heat 9.225 / xy 0.0374)  val MCRMSE 0.03752  EMA 0.03798  -> best(model) 0.03752
+[22:26:45]   epoch   3  train_loss 7.8699 (heat 7.854 / xy 0.0319)  val MCRMSE 0.02019  EMA 0.02906  -> best(model) 0.02019
+[22:26:47]   epoch   4  train_loss 6.2305 (heat 6.219 / xy 0.0233)  val MCRMSE 0.00856  EMA 0.01164  -> best(model) 0.00856
+[22:26:50]   epoch   5  train_loss 5.4101  val MCRMSE 0.02019
+[22:26:53]   epoch   6  train_loss 5.0538 (heat 5.052 / xy 0.0036)  val MCRMSE 0.00873  EMA 0.00750  -> best(ema) 0.00750
+[22:26:55]   epoch   7  train_loss 4.8878 (heat 4.887 / xy 0.0022)  val MCRMSE 0.00690  EMA 0.00609  -> best(ema) 0.00609
+[22:27:03]   epoch  10  train_loss 4.8125  val MCRMSE 0.00900
+[22:27:11]   epoch  13  train_loss 4.7807 (heat 4.780 / xy 0.0007)  val MCRMSE 0.00552  EMA 0.00582  -> best(model) 0.00552
+[22:27:16]   epoch  15  train_loss 4.7677  val MCRMSE 0.00869
+[22:27:29]   epoch  20  train_loss 4.7503  val MCRMSE 0.01166
+[22:27:42]   epoch  25  train_loss 4.7343  val MCRMSE 0.00966
+[22:27:54]   epoch  30  train_loss 4.7318  val MCRMSE 0.00831
+[22:28:07]   epoch  35  train_loss 4.7341 (heat 4.734 / xy 0.0002)  val MCRMSE 0.00494  EMA 0.00948  -> best(model) 0.00494
+[22:28:36]   epoch  40  train_loss 4.7285  val MCRMSE 0.00532
+[22:28:50]   epoch  45  train_loss 4.7354  val MCRMSE 0.00509
+[22:29:03]   epoch  50  train_loss 4.7260  val MCRMSE 0.00515
+[22:29:04]   fold 4 完成: MCRMSE 0.00494  像素误差 mean 14.7 / median 8.8  用时 2m28s
+[22:29:04] 
+======================================================================
+全部完成，用时 12m24s
+[22:29:04] 平均 MCRMSE 0.00490  平均 pooled-RMSE 0.00530  平均像素误差 15.2px
+[22:29:04] 缓存状态: letterbox 缓存 100 张 / 75 MB，命中率 99.6%
+[22:29:04] 产物目录: runs\t3_cnxt_512
+[22:29:04] 下一步: .\run.ps1 -m src.fovea_predict --data data/task3 --runs runs\t3_cnxt_512 --out submissions/t3_cnxt_512.csv

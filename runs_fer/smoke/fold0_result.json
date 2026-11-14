@@ -1,0 +1,56 @@
+{
+  "best": {
+    "acc": 0.4894783377541998,
+    "src": "raw",
+    "epoch": 2
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.7632033272316252,
+      "acc_raw": 0.41856763925729445,
+      "acc_ema": 0.40247568523430594,
+      "mix": false
+    },
+    {
+      "epoch": 2,
+      "loss": 1.5535565154376534,
+      "acc_raw": 0.4894783377541998,
+      "acc_ema": 0.4870026525198939,
+      "mix": false
+    }
+  ],
+  "args": {
+    "data": "data/raw/2026task2",
+    "cache": null,
+    "out": null,
+    "tag": "smoke",
+    "model": "convnext_tiny",
+    "img_size": 128,
+    "no_pretrained": false,
+    "drop_path": 0.1,
+    "epochs": 2,
+    "batch_size": 128,
+    "lr": 0.0003,
+    "wd": 0.05,
+    "warmup_epochs": 3.0,
+    "label_smoothing": 0.1,
+    "mixup": 0.2,
+    "cutmix": 1.0,
+    "mixup_prob": 0.5,
+    "no_mix_last": 5,
+    "ema_decay": 0.999,
+    "grad_clip": 5.0,
+    "folds": 5,
+    "fold": 0,
+    "seed": 42,
+    "tta": 1,
+    "limit_frac": 0.1,
+    "log_interval": 10
+  },
+  "fold": 0,
+  "n_train": 2209,
+  "n_val": 5655,
+  "final_val_acc": 0.4894783377541998,
+  "elapsed": 138.0620152950287
+}

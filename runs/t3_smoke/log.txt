@@ -1,0 +1,33 @@
+[21:52:09] 设备: CUDA:NVIDIA GeForce RTX 4060 Laptop GPU (8.0 GB), torch=2.11.0+cu128, cuda=12.8
+[21:52:09] 参数: {'data': 'data/task3', 'backbone': 'effnet_b0', 'img_size': 512, 'epochs': 6, 'folds': 5, 'fold': 0, 'batch_size': 8, 'lr': 0.0005, 'weight_decay': 0.05, 'warmup_epochs': 1.0, 'head_dim': 64, 'out_stride': 4, 'drop_path': 0.1, 'sigma_ratio': 0.02, 'coord_weight': 0.5, 'rotate': 12.0, 'scale_min': 0.88, 'scale_max': 1.12, 'shift': 0.05, 'hflip': 0.5, 'color_jitter': 0.25, 'ema_decay': 0.999, 'no_ema': False, 'no_pretrained': False, 'seed': 42, 'tag': 't3_smoke', 'out': 'runs', 'cache_mb': 3072, 'limit': 0}
+[21:52:09] 数据布局:
+标签表        : D:\东大\kaggle\data\task3\detection\fovea_localization_train_GT.csv
+  ID 列       : 'data'
+  坐标列      : x='Fovea_X'  y='Fovea_Y'
+  坐标单位    : pixel（像素，提交前需按每张图尺寸换算）
+  训练样本数  : 80
+  x 范围      : [723.7040, 1794.5674]  mean=1446.1119
+  y 范围      : [930.1719, 1182.1610]  mean=1055.7777
+测试图片数    : 20
+sample_submit : D:\东大\kaggle\data\task3\detection\sample_submission.csv
+  提交表形态  : long（长表：每图两行 _X / _Y）
+  提交列名    : ['ImageID', 'value']
+  提交行数    : 40（已解析 40 行）
+[21:52:09] 训练样本 80，测试图片 20，坐标单位 pixel
+[21:52:09] 
+======================================================================
+=== Fold 0: train 64 / val 16
+[21:53:28]   epoch   1  train_loss 9.6427 (heat 9.626 / xy 0.0340)  val MCRMSE 0.04303  EMA 0.04366  -> best(model) 0.04303
+[21:53:31]   epoch   2  train_loss 8.0024 (heat 7.986 / xy 0.0333)  val MCRMSE 0.01196  EMA 0.01739  -> best(model) 0.01196
+[21:53:33]   epoch   3  train_loss 6.1832 (heat 6.174 / xy 0.0192)  val MCRMSE 0.01010  EMA 0.00986  -> best(ema) 0.00986
+[21:53:35]   epoch   4  train_loss 5.4227 (heat 5.418 / xy 0.0099)  val MCRMSE 0.00880  EMA 0.00889  -> best(model) 0.00880
+[21:53:38]   epoch   5  train_loss 5.1962 (heat 5.193 / xy 0.0061)  val MCRMSE 0.00791  EMA 0.00837  -> best(model) 0.00791
+[21:53:41]   epoch   6  train_loss 5.0921  val MCRMSE 0.00859
+[21:54:09]   fold 0 完成: MCRMSE 0.00791  像素误差 mean 22.2 / median 16.4  用时 1m59s
+[21:54:09] 
+======================================================================
+全部完成，用时 1m59s
+[21:54:09] 平均 MCRMSE 0.00791  平均像素误差 22.2px
+[21:54:09] 缓存状态: letterbox 缓存 100 张 / 75 MB，命中率 83.7%
+[21:54:09] 产物目录: runs\t3_smoke
+[21:54:09] 下一步: .\run.ps1 -m src.fovea_predict --data data/task3 --runs runs\t3_smoke --out submissions/t3_smoke.csv

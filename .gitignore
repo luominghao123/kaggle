@@ -1,0 +1,54 @@
+# ==========================================================
+# 东北大学机器学习课程设计 · 四任务代码仓库
+# 原则：只提交「代码 + 文档 + 小型可核查证据」，
+#       不提交「环境 / 数据集 / 模型权重 / 压缩包」。
+# 原因：runs 下单个权重文件最大 377MB，GitHub 单文件硬上限 100MB。
+# ==========================================================
+
+# ---------- Python 环境与缓存 ----------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.hf_cache/
+.tmp/
+tmp/
+*.stackdump
+
+# ---------- 数据集（由课程/Kaggle 下发，体积大，不入库）----------
+data/
+!data/README_把数据放这里.md
+data_fake/
+实验四/segmentation/
+任务3/
+*.zip
+*.xlsx
+*.rar
+*.7z
+
+# ---------- 训练产物中的二进制（体积大，不入库）----------
+# 保留：runs/**/summary.json、fold*_result.json、log.txt、runs/_tune/*.json（可复现证据）
+runs/**/*.pt
+runs/**/*.pth
+runs/**/*.ckpt
+runs/**/*.npz
+runs/**/*.npy
+runs/**/*.png
+runs_fer/**/*.pt
+runs_fer/**/*.pth
+runs_fer/**/*.npz
+runs_fer/**/*.npy
+submissions/t4_masks_cnxt/
+
+# ---------- 参考的他人/往年代码（避免被误判为抄袭，不入库）----------
+_ref/
+
+# ---------- 编辑器与系统文件 ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

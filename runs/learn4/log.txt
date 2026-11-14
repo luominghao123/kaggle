@@ -1,0 +1,60 @@
+[01:30:55] 设备: CUDA:NVIDIA GeForce RTX 4060 Laptop GPU (8.0 GB), torch=2.11.0+cu128, cuda=12.8
+[01:30:55] 参数: {'data': 'data_fake', 'backbone': 'effnet_b0', 'img_size': 320, 'epochs': 30, 'folds': 2, 'fold': -1, 'batch_size': 16, 'lr': 0.0006, 'weight_decay': 0.05, 'warmup_epochs': 2.0, 'head_dim': 64, 'out_stride': 4, 'drop_path': 0.1, 'sigma_ratio': 0.02, 'coord_weight': 0.5, 'rotate': 12.0, 'scale_min': 0.88, 'scale_max': 1.12, 'shift': 0.05, 'hflip': 0.5, 'color_jitter': 0.25, 'ema_decay': 0.999, 'no_ema': False, 'no_pretrained': False, 'seed': 42, 'tag': 'learn4', 'out': 'runs', 'cache_mb': 3072, 'limit': 0}
+[01:30:55] 数据布局:
+标签表        : D:\东大\kaggle\data_fake\train.csv
+  ID 列       : 'image_id'
+  坐标列      : x='x'  y='y'
+  坐标单位    : normalized
+  训练样本数  : 160
+  x 范围      : [0.2673, 0.7298]  mean=0.4969
+  y 范围      : [0.5306, 0.7663]  mean=0.6300
+测试图片数    : 40
+sample_submit : D:\东大\kaggle\data_fake\sample_submission.csv
+  提交列名    : ['ID', 'x', 'y']
+[01:30:55] 训练样本 160，测试图片 40，坐标单位 normalized
+[01:30:55] 
+======================================================================
+=== Fold 0: train 80 / val 80
+[01:34:16]   epoch   1  train_loss 8.8000 (heat 8.755 / xy 0.0905)  val MCRMSE 0.11705  EMA 0.11707  -> best(model) 0.11705
+[01:34:29]   epoch   2  train_loss 8.3702 (heat 8.326 / xy 0.0888)  val MCRMSE 0.10351  EMA 0.11190  -> best(model) 0.10351
+[01:34:41]   epoch   3  train_loss 6.4940 (heat 6.452 / xy 0.0835)  val MCRMSE 0.00857  EMA 0.05576  -> best(model) 0.00857
+[01:34:54]   epoch   4  train_loss 4.9583 (heat 4.936 / xy 0.0443)  val MCRMSE 0.00402  EMA 0.00479  -> best(model) 0.00402
+[01:35:06]   epoch   5  train_loss 4.2772 (heat 4.268 / xy 0.0179)  val MCRMSE 0.00188  EMA 0.00284  -> best(model) 0.00188
+[01:35:58]   epoch   9  train_loss 3.8316 (heat 3.831 / xy 0.0004)  val MCRMSE 0.00230  EMA 0.00187  -> best(ema) 0.00187
+[01:36:10]   epoch  10  train_loss 3.8219 (heat 3.822 / xy 0.0002)  val MCRMSE 0.00176  EMA 0.00156  -> best(ema) 0.00156
+[01:36:24]   epoch  11  train_loss 3.8164 (heat 3.816 / xy 0.0002)  val MCRMSE 0.00128  EMA 0.00133  -> best(model) 0.00128
+[16:31:35]   epoch  12  train_loss 3.8084 (heat 3.808 / xy 0.0001)  val MCRMSE 0.00104  EMA 0.00119  -> best(model) 0.00104
+[16:31:44]   epoch  15  train_loss 3.8029  val MCRMSE 0.00128
+[16:31:51]   epoch  18  train_loss 3.7967 (heat 3.797 / xy 0.0001)  val MCRMSE 0.00097  EMA 0.00107  -> best(model) 0.00097
+[16:31:56]   epoch  20  train_loss 3.7965  val MCRMSE 0.00104
+[16:32:03]   epoch  23  train_loss 3.7956 (heat 3.796 / xy 0.0000)  val MCRMSE 0.00094  EMA 0.00103  -> best(model) 0.00094
+[16:32:07]   epoch  25  train_loss 3.7945  val MCRMSE 0.00103
+[16:32:16]   epoch  30  train_loss 3.7945  val MCRMSE 0.00095
+[16:32:41]   fold 0 完成: MCRMSE 0.00094  像素误差 mean 0.8 / median 0.7  用时 15h01m45s
+[16:32:41] 
+======================================================================
+=== Fold 1: train 80 / val 80
+[16:32:50]   epoch   1  train_loss 8.8056 (heat 8.757 / xy 0.0980)  val MCRMSE 0.11060  EMA 0.11061  -> best(model) 0.11060
+[16:32:52]   epoch   2  train_loss 8.4414 (heat 8.393 / xy 0.0964)  val MCRMSE 0.10110  EMA 0.10697  -> best(model) 0.10110
+[16:32:54]   epoch   3  train_loss 6.9303 (heat 6.884 / xy 0.0924)  val MCRMSE 0.01360  EMA 0.05259  -> best(model) 0.01360
+[16:32:56]   epoch   4  train_loss 5.4842 (heat 5.449 / xy 0.0697)  val MCRMSE 0.00572  EMA 0.00687  -> best(model) 0.00572
+[16:32:58]   epoch   5  train_loss 4.5998 (heat 4.582 / xy 0.0361)  val MCRMSE 0.00192  EMA 0.00353  -> best(model) 0.00192
+[16:33:06]   epoch   9  train_loss 3.8442 (heat 3.844 / xy 0.0008)  val MCRMSE 0.00143  EMA 0.00145  -> best(model) 0.00143
+[16:33:08]   epoch  10  train_loss 3.8258 (heat 3.826 / xy 0.0003)  val MCRMSE 0.00122  EMA 0.00126  -> best(model) 0.00122
+[16:33:10]   epoch  11  train_loss 3.8183 (heat 3.818 / xy 0.0002)  val MCRMSE 0.00130  EMA 0.00120  -> best(ema) 0.00120
+[16:33:16]   epoch  14  train_loss 3.8049 (heat 3.805 / xy 0.0001)  val MCRMSE 0.00116  EMA 0.00121  -> best(model) 0.00116
+[16:33:18]   epoch  15  train_loss 3.8023  val MCRMSE 0.00129
+[16:33:29]   epoch  20  train_loss 3.7987  val MCRMSE 0.00117
+[16:33:39]   epoch  25  train_loss 3.7962  val MCRMSE 0.00117
+[16:33:41]   epoch  26  train_loss 3.7958 (heat 3.796 / xy 0.0000)  val MCRMSE 0.00115  EMA 0.00119  -> best(model) 0.00115
+[16:33:45]   epoch  28  train_loss 3.7962 (heat 3.796 / xy 0.0001)  val MCRMSE 0.00115  EMA 0.00119  -> best(model) 0.00115
+[16:33:47]   epoch  29  train_loss 3.7960 (heat 3.796 / xy 0.0000)  val MCRMSE 0.00113  EMA 0.00117  -> best(model) 0.00113
+[16:33:49]   epoch  30  train_loss 3.7952 (heat 3.795 / xy 0.0000)  val MCRMSE 0.00110  EMA 0.00115  -> best(model) 0.00110
+[16:33:49]   fold 1 完成: MCRMSE 0.00110  像素误差 mean 0.8 / median 0.7  用时 1m08s
+[16:33:49] 
+======================================================================
+全部完成，用时 15h02m54s
+[16:33:49] 平均 MCRMSE 0.00102  平均像素误差 0.8px
+[16:33:49] 缓存状态: letterbox 缓存 200 张 / 59 MB，命中率 98.6%
+[16:33:49] 产物目录: runs\learn4
+[16:33:49] 下一步: .\run.ps1 -m src.fovea_predict --data data_fake --runs runs\learn4 --out submissions/learn4.csv

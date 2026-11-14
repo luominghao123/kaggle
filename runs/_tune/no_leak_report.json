@@ -1,0 +1,11 @@
+{
+  "sub": "submissions/t4_vessel_cnxt.csv",
+  "test_has_gt": false,
+  "test_train_md5_dups": [],
+  "test_train_max_cosine": 0.9938990473747253,
+  "max_iou_vs_train_gt": 0.15621961653232574,
+  "oof_dice_mean": 0.7766989375119783,
+  "oof_fp_mean": 8001.0,
+  "oof_fn_mean": 5238.3,
+  "problems": []
+}

@@ -1,0 +1,32 @@
+{
+  "runs": [
+    "runs\\t3_b0_512",
+    "runs\\t3_cnxt_512"
+  ],
+  "n_models": 10,
+  "n_test": 20,
+  "tta": false,
+  "refine": false,
+  "unit": "pixel",
+  "oof": [
+    {
+      "run": "t3_b0_512",
+      "n": 80,
+      "oof_mcrmse": 0.005819790996611118
+    },
+    {
+      "run": "t3_cnxt_512",
+      "n": 80,
+      "oof_mcrmse": 0.005432208999991417
+    }
+  ],
+  "out": "submissions\\t3_ens.csv",
+  "pred_min": [
+    1200.1399562358856,
+    980.4698889255523
+  ],
+  "pred_max": [
+    1731.253381729126,
+    1219.4111108779907
+  ]
+}

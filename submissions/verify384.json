@@ -1,0 +1,26 @@
+{
+  "runs": [
+    "runs\\verify384"
+  ],
+  "n_models": 2,
+  "n_test": 40,
+  "tta": true,
+  "refine": true,
+  "unit": "normalized",
+  "oof": [
+    {
+      "run": "verify384",
+      "n": 160,
+      "oof_mcrmse": 0.001770218601450324
+    }
+  ],
+  "out": "submissions\\verify384.csv",
+  "pred_min": [
+    0.31940579414367676,
+    0.5363044304426536
+  ],
+  "pred_max": [
+    0.7177628893417591,
+    0.740026963851588
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "args": {
+    "data": "data/raw/2026task2",
+    "cache": null,
+    "out": null,
+    "tag": "cxt128",
+    "model": "convnext_tiny",
+    "img_size": 128,
+    "no_pretrained": false,
+    "drop_path": 0.1,
+    "epochs": 35,
+    "batch_size": 192,
+    "lr": 0.0003,
+    "wd": 0.05,
+    "warmup_epochs": 3.0,
+    "label_smoothing": 0.1,
+    "mixup": 0.2,
+    "cutmix": 1.0,
+    "mixup_prob": 0.5,
+    "no_mix_last": 5,
+    "ema_decay": 0.999,
+    "grad_clip": 5.0,
+    "folds": 5,
+    "fold": -1,
+    "seed": 42,
+    "tta": 2,
+    "limit_frac": 1.0,
+    "log_interval": 60
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "best_acc": 0.6949602122015915,
+      "src": "raw",
+      "final_acc": 0.6949602122015915,
+      "elapsed": 1936.8416697978973
+    },
+    {
+      "fold": 1,
+      "best_acc": 0.7140583554376658,
+      "src": "ema",
+      "final_acc": 0.7140583554376658,
+      "elapsed": 4777.824167966843
+    },
+    {
+      "fold": 2,
+      "best_acc": 0.7043324491600353,
+      "src": "ema",
+      "final_acc": 0.7043324491600353,
+      "elapsed": 2452.170260667801
+    },
+    {
+      "fold": 3,
+      "best_acc": 0.6935455349248453,
+      "src": "ema",
+      "final_acc": 0.6935455349248453,
+      "elapsed": 2104.814604282379
+    },
+    {
+      "fold": 4,
+      "best_acc": 0.7006189213085765,
+      "src": "ema",
+      "final_acc": 0.7006189213085765,
+      "elapsed": 1082.1379826068878
+    }
+  ]
+}

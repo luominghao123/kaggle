@@ -1,0 +1,26 @@
+{
+  "runs": [
+    "runs\\learn4"
+  ],
+  "n_models": 2,
+  "n_test": 40,
+  "tta": true,
+  "refine": true,
+  "unit": "normalized",
+  "oof": [
+    {
+      "run": "learn4",
+      "n": 160,
+      "oof_mcrmse": 0.001022030832245946
+    }
+  ],
+  "out": "submissions\\learn4.csv",
+  "pred_min": [
+    0.32128798961639404,
+    0.5370069687110768
+  ],
+  "pred_max": [
+    0.7153597917385444,
+    0.7417635409471119
+  ]
+}

@@ -1,0 +1,41 @@
+[20:32:35] 参数: {"data": "data/raw/2026task2", "cache": null, "runs": ["runs_fer/cxt128"], "out": "submissions/fer_emotion_model.csv", "tta": 2, "batch_size": 256, "weights": "auto", "encoding": "fer2013_new", "dup_fix": true, "prior": "none", "prior_strength": 0.5, "use_public": "none"}
+[20:32:40] 读取 runs_fer/cxt128
+[20:32:40]   runs_fer\cxt128: 1 折, OOF 准确率 = 0.6950
+[20:32:40] 测试集推理：
+[20:33:53]     fold 0 (convnext_tiny @128, best=0.6950) 推理完成
+[20:33:53] 集成权重: cxt128=1.000(oof 0.6950)
+[20:33:53] 与训练集完全相同的测试图: 520 / 7065（已直接采用训练标签）
+[20:33:54] 测试集预测类别分布: Angry=915, Fear=884, Happy=1821, Neutral=1240, Sad=1435, Surprise=770
+[20:33:54] 已写出 submissions\fer_emotion_model.csv（编码 fer2013_new，取值分布 [915, 884, 1821, 1435, 770, 1240]）
+[20:33:54] 已写出 submissions\fer_emotion_model__enc_alpha.csv（编码 alpha，取值分布 [915, 884, 1821, 1240, 1435, 770]）
+[20:33:54] 已写出 submissions\fer_emotion_model__enc_fer2013_gap.csv（编码 fer2013_gap，取值分布 [915, 0, 884, 1821, 1435, 770, 1240]）
+[20:33:54] 已写出 submissions\fer_emotion_model__names.csv（编码 names，取值分布 [915, 884, 1821, 1240, 1435, 770]）
+[21:22:09] 参数: {"data": "data/raw/2026task2", "cache": null, "runs": ["runs_fer/cxt128"], "out": "submissions/fer_emotion_model.csv", "tta": 2, "batch_size": 256, "weights": "auto", "encoding": "fer2013_new", "dup_fix": true, "prior": "none", "prior_strength": 0.5, "use_public": "none"}
+[21:22:16] 读取 runs_fer/cxt128
+[21:22:16]   runs_fer\cxt128: 2 折, OOF 准确率 = 0.7045
+[21:22:16] 测试集推理：
+[21:23:51]     fold 0 (convnext_tiny @128, best=0.6950) 推理完成
+[21:24:37]     fold 1 (convnext_tiny @128, best=0.7141) 推理完成
+[21:24:38] 集成权重: cxt128=1.000(oof 0.7045)
+[21:24:41] 与训练集完全相同的测试图: 520 / 7065（已直接采用训练标签）
+[21:24:41] 测试集预测类别分布: Angry=938, Fear=809, Happy=1798, Neutral=1382, Sad=1355, Surprise=783
+[21:24:41] 已写出 submissions\fer_emotion_model.csv（编码 fer2013_new，取值分布 [938, 809, 1798, 1355, 783, 1382]）
+[21:24:41] 已写出 submissions\fer_emotion_model__enc_alpha.csv（编码 alpha，取值分布 [938, 809, 1798, 1382, 1355, 783]）
+[21:24:41] 已写出 submissions\fer_emotion_model__enc_fer2013_gap.csv（编码 fer2013_gap，取值分布 [938, 0, 809, 1798, 1355, 783, 1382]）
+[21:24:41] 已写出 submissions\fer_emotion_model__names.csv（编码 names，取值分布 [938, 809, 1798, 1382, 1355, 783]）
+[22:47:48] 参数: {"data": "data/raw/2026task2", "cache": null, "runs": ["runs_fer/cxt128"], "out": "submissions/fer_emotion_model.csv", "tta": 2, "batch_size": 256, "weights": "auto", "encoding": "fer2013_new", "dup_fix": true, "prior": "none", "prior_strength": 0.5, "use_public": "none"}
+[22:47:53] 读取 runs_fer/cxt128
+[22:47:53]   runs_fer\cxt128: 5 折, OOF 准确率 = 0.7015
+[22:47:53] 测试集推理：
+[22:48:32]     fold 0 (convnext_tiny @128, best=0.6950) 推理完成
+[22:48:47]     fold 1 (convnext_tiny @128, best=0.7141) 推理完成
+[22:49:04]     fold 2 (convnext_tiny @128, best=0.7043) 推理完成
+[22:49:19]     fold 3 (convnext_tiny @128, best=0.6935) 推理完成
+[22:49:35]     fold 4 (convnext_tiny @128, best=0.7006) 推理完成
+[22:49:35] 集成权重: cxt128=1.000(oof 0.7015)
+[22:49:36] 与训练集完全相同的测试图: 520 / 7065（已直接采用训练标签）
+[22:49:36] 测试集预测类别分布: Angry=935, Fear=816, Happy=1799, Neutral=1472, Sad=1248, Surprise=795
+[22:49:36] 已写出 submissions\fer_emotion_model.csv（编码 fer2013_new，取值分布 [935, 816, 1799, 1248, 795, 1472]）
+[22:49:36] 已写出 submissions\fer_emotion_model__enc_alpha.csv（编码 alpha，取值分布 [935, 816, 1799, 1472, 1248, 795]）
+[22:49:36] 已写出 submissions\fer_emotion_model__enc_fer2013_gap.csv（编码 fer2013_gap，取值分布 [935, 0, 816, 1799, 1248, 795, 1472]）
+[22:49:36] 已写出 submissions\fer_emotion_model__names.csv（编码 names，取值分布 [935, 816, 1799, 1472, 1248, 795]）

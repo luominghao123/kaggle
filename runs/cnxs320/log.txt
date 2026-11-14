@@ -1,0 +1,283 @@
+[20:39:20] ==============================================================================
+[20:39:20] 实验: cnxs320
+[20:39:20] CUDA:NVIDIA GeForce RTX 4060 Laptop GPU (8.0 GB), torch=2.11.0+cu128, cuda=12.8
+[20:39:20] train_dir        : D:\东大\kaggle\data\raw\2026task1\dataset-for-task2\dataset-for-task2\train
+test_dir         : D:\东大\kaggle\data\raw\2026task1\dataset-for-task2\dataset-for-task2\test
+sample_submission: D:\东大\kaggle\data\raw\2026task1\dataset-for-task2\dataset-for-task2\sample_submission.csv
+类别数           : 5
+    - Black-grass
+    - Common wheat
+    - Loose Silky-bent
+    - Scentless Mayweed
+    - Sugar beet
+[20:39:20] 参数: {'data': 'data', 'out': 'runs', 'tag': 'cnxs320', 'model': 'convnext_small', 'img_size': 320, 'drop_path': 0.1, 'drop_rate': 0.0, 'no_pretrained': False, 'epochs': 40, 'batch_size': 16, 'lr': 0.0005, 'min_lr': 1e-06, 'weight_decay': 0.05, 'warmup_epochs': 3, 'optimizer': 'adamw', 'grad_clip': 5.0, 'label_smoothing': 0.1, 'mixup': 0.8, 'cutmix': 1.0, 'mixup_prob': 0.5, 'mixup_off_epochs': 3, 'ema_decay': 0.9998, 'no_ema': False, 'amp': 'bf16', 'folds': 5, 'fold': -1, 'skip_existing': False, 'seed': 42, 'workers': 0, 'no_cache': False, 'cache_max_side': 576, 'cache_budget_mb': 2048, 'log_interval': 50, 'cache_dir': None}
+[20:39:20] ==============================================================================
+[20:39:20] 训练图片 500 张，测试图片 378 张
+[20:39:20] 类别分布: {'Black-grass': 100, 'Common wheat': 100, 'Loose Silky-bent': 100, 'Scentless Mayweed': 100, 'Sugar beet': 100}
+[20:39:20] 最大/最小类样本比: 1.0
+[20:39:20] [fold 0] 训练集 400 张 / 验证集 100 张 / 测试集 378 张
+[20:40:46] [fold 0] ep   1/40  loss 1.4879  val_acc 0.7500  val_F1 0.7458  (EMA 0.7200 / 0.7023)  lr 1.69e-04  71s
+[20:40:47]     -> 保存最佳权重 (epoch 1, raw, F1=0.7458, acc=0.7500)
+[20:40:55] [fold 0] ep   2/40  loss 1.1907  val_acc 0.6300  val_F1 0.5987  (EMA 0.8100 / 0.8061)  lr 3.38e-04  9s
+[20:40:56]     -> 保存最佳权重 (epoch 2, ema, F1=0.8061, acc=0.8100)
+[20:41:05] [fold 0] ep   3/40  loss 1.1626  val_acc 0.6600  val_F1 0.6580  (EMA 0.8400 / 0.8306)  lr 5.00e-04  9s
+[20:41:06]     -> 保存最佳权重 (epoch 3, ema, F1=0.8306, acc=0.8400)
+[20:41:14] [fold 0] ep   4/40  loss 1.0785  val_acc 0.7600  val_F1 0.7288  (EMA 0.8000 / 0.7749)  lr 4.99e-04  9s
+[20:41:23] [fold 0] ep   5/40  loss 1.0275  val_acc 0.7900  val_F1 0.7797  (EMA 0.8800 / 0.8813)  lr 4.96e-04  9s
+[20:41:24]     -> 保存最佳权重 (epoch 5, ema, F1=0.8813, acc=0.8800)
+[20:41:33] [fold 0] ep   6/40  loss 1.0765  val_acc 0.8700  val_F1 0.8674  (EMA 0.8400 / 0.8387)  lr 4.92e-04  9s
+[20:41:41] [fold 0] ep   7/40  loss 1.0455  val_acc 0.8500  val_F1 0.8498  (EMA 0.8500 / 0.8431)  lr 4.86e-04  9s
+[20:41:50] [fold 0] ep   8/40  loss 1.0603  val_acc 0.8600  val_F1 0.8597  (EMA 0.8800 / 0.8783)  lr 4.78e-04  9s
+[20:41:59] [fold 0] ep   9/40  loss 0.9643  val_acc 0.8900  val_F1 0.8887  (EMA 0.9200 / 0.9197)  lr 4.68e-04  9s
+[20:42:00]     -> 保存最佳权重 (epoch 9, ema, F1=0.9197, acc=0.9200)
+[20:42:08] [fold 0] ep  10/40  loss 1.0342  val_acc 0.8400  val_F1 0.8383  (EMA 0.8900 / 0.8882)  lr 4.57e-04  9s
+[20:42:17] [fold 0] ep  11/40  loss 1.0686  val_acc 0.9000  val_F1 0.9009  (EMA 0.8900 / 0.8887)  lr 4.45e-04  9s
+[20:42:26] [fold 0] ep  12/40  loss 0.9106  val_acc 0.7200  val_F1 0.6634  (EMA 0.8800 / 0.8783)  lr 4.31e-04  9s
+[20:42:34] [fold 0] ep  13/40  loss 1.0060  val_acc 0.8500  val_F1 0.8324  (EMA 0.8900 / 0.8882)  lr 4.15e-04  9s
+[20:42:46] [fold 0] ep  14/40  loss 0.8999  val_acc 0.8700  val_F1 0.8656  (EMA 0.8500 / 0.8455)  lr 3.99e-04  12s
+[20:42:56] [fold 0] ep  15/40  loss 0.9532  val_acc 0.8500  val_F1 0.8338  (EMA 0.9000 / 0.8983)  lr 3.81e-04  10s
+[20:43:06] [fold 0] ep  16/40  loss 1.0695  val_acc 0.8500  val_F1 0.8472  (EMA 0.8900 / 0.8863)  lr 3.63e-04  10s
+[20:43:15] [fold 0] ep  17/40  loss 0.8409  val_acc 0.9000  val_F1 0.8981  (EMA 0.8900 / 0.8881)  lr 3.44e-04  9s
+[20:43:25] [fold 0] ep  18/40  loss 0.9195  val_acc 0.9000  val_F1 0.9005  (EMA 0.9000 / 0.9000)  lr 3.24e-04  10s
+[20:43:35] [fold 0] ep  19/40  loss 0.9658  val_acc 0.8900  val_F1 0.8881  (EMA 0.9200 / 0.9200)  lr 3.03e-04  10s
+[20:43:36]     -> 保存最佳权重 (epoch 19, ema, F1=0.9200, acc=0.9200)
+[20:43:46] [fold 0] ep  20/40  loss 0.8986  val_acc 0.9000  val_F1 0.9015  (EMA 0.9300 / 0.9302)  lr 2.82e-04  9s
+[20:43:46]     -> 保存最佳权重 (epoch 20, ema, F1=0.9302, acc=0.9300)
+[20:43:57] [fold 0] ep  21/40  loss 0.8521  val_acc 0.9500  val_F1 0.9505  (EMA 0.9500 / 0.9502)  lr 2.61e-04  10s
+[20:43:57]     -> 保存最佳权重 (epoch 21, raw, F1=0.9505, acc=0.9500)
+[20:44:07] [fold 0] ep  22/40  loss 0.9411  val_acc 0.9100  val_F1 0.9106  (EMA 0.9400 / 0.9404)  lr 2.40e-04  10s
+[20:44:18] [fold 0] ep  23/40  loss 0.8955  val_acc 0.9100  val_F1 0.9079  (EMA 0.9400 / 0.9404)  lr 2.19e-04  11s
+[20:44:30] [fold 0] ep  24/40  loss 0.9561  val_acc 0.9200  val_F1 0.9193  (EMA 0.9400 / 0.9404)  lr 1.98e-04  12s
+[20:44:42] [fold 0] ep  25/40  loss 0.8790  val_acc 0.9100  val_F1 0.9115  (EMA 0.9300 / 0.9303)  lr 1.77e-04  12s
+[20:44:52] [fold 0] ep  26/40  loss 0.9319  val_acc 0.9100  val_F1 0.9090  (EMA 0.9300 / 0.9303)  lr 1.57e-04  11s
+[20:45:03] [fold 0] ep  27/40  loss 0.9288  val_acc 0.9100  val_F1 0.9096  (EMA 0.9300 / 0.9303)  lr 1.38e-04  11s
+[20:45:14] [fold 0] ep  28/40  loss 0.7871  val_acc 0.9000  val_F1 0.8964  (EMA 0.9200 / 0.9193)  lr 1.20e-04  11s
+[20:45:25] [fold 0] ep  29/40  loss 0.9050  val_acc 0.9000  val_F1 0.8981  (EMA 0.9300 / 0.9303)  lr 1.02e-04  11s
+[20:45:36] [fold 0] ep  30/40  loss 0.8974  val_acc 0.9000  val_F1 0.8979  (EMA 0.9300 / 0.9303)  lr 8.57e-05  11s
+[20:45:48] [fold 0] ep  31/40  loss 0.8588  val_acc 0.9100  val_F1 0.9081  (EMA 0.9100 / 0.9081)  lr 7.04e-05  12s
+[20:45:59] [fold 0] ep  32/40  loss 0.9050  val_acc 0.9100  val_F1 0.9081  (EMA 0.9100 / 0.9081)  lr 5.64e-05  11s
+[20:46:10] [fold 0] ep  33/40  loss 0.8106  val_acc 0.9000  val_F1 0.8972  (EMA 0.9100 / 0.9081)  lr 4.38e-05  11s
+[20:46:22] [fold 0] ep  34/40  loss 0.8269  val_acc 0.9100  val_F1 0.9095  (EMA 0.9100 / 0.9081)  lr 3.27e-05  11s
+[20:46:33] [fold 0] ep  35/40  loss 0.8193  val_acc 0.9100  val_F1 0.9079  (EMA 0.9100 / 0.9081)  lr 2.31e-05  12s
+[20:46:43] [fold 0] ep  36/40  loss 0.7816  val_acc 0.9300  val_F1 0.9297  (EMA 0.9100 / 0.9081)  lr 1.53e-05  10s
+[20:46:53] [fold 0] ep  37/40  loss 0.7912  val_acc 0.9200  val_F1 0.9193  (EMA 0.9100 / 0.9081)  lr 9.05e-06  10s
+[20:47:04] [fold 0] ep  38/40  loss 0.4436  val_acc 0.9300  val_F1 0.9297  (EMA 0.9200 / 0.9193)  lr 4.59e-06  11s
+[20:47:13] [fold 0] ep  39/40  loss 0.4400  val_acc 0.9300  val_F1 0.9297  (EMA 0.9200 / 0.9193)  lr 1.90e-06  10s
+[20:47:24] [fold 0] ep  40/40  loss 0.4346  val_acc 0.9300  val_F1 0.9297  (EMA 0.9200 / 0.9193)  lr 1.00e-06  10s
+[20:47:45] [fold 0] 完成  最佳 epoch=21  用时 8m09s
+
+各类别 F1 / 召回 / 精确率:
+    类别                                   n       F1   recall     prec
+    Black-grass                         20   0.8837   0.9500   0.8261
+    Common wheat                        20   0.9500   0.9500   0.9500
+    Loose Silky-bent                    20   0.9189   0.8500   1.0000
+    Scentless Mayweed                   20   1.0000   1.0000   1.0000
+    Sugar beet                          20   1.0000   1.0000   1.0000
+[20:47:45] [fold 1] 训练集 400 张 / 验证集 100 张 / 测试集 378 张
+[20:48:10] [fold 1] ep   1/40  loss 1.4440  val_acc 0.8000  val_F1 0.7960  (EMA 0.8400 / 0.8341)  lr 1.69e-04  17s
+[20:48:10]     -> 保存最佳权重 (epoch 1, ema, F1=0.8341, acc=0.8400)
+[20:48:19] [fold 1] ep   2/40  loss 1.1489  val_acc 0.7800  val_F1 0.7677  (EMA 0.8500 / 0.8475)  lr 3.38e-04  9s
+[20:48:20]     -> 保存最佳权重 (epoch 2, ema, F1=0.8475, acc=0.8500)
+[20:48:29] [fold 1] ep   3/40  loss 1.0728  val_acc 0.7500  val_F1 0.7317  (EMA 0.7900 / 0.7614)  lr 5.00e-04  9s
+[20:48:37] [fold 1] ep   4/40  loss 1.1423  val_acc 0.8700  val_F1 0.8695  (EMA 0.8600 / 0.8597)  lr 4.99e-04  9s
+[20:48:38]     -> 保存最佳权重 (epoch 4, raw, F1=0.8695, acc=0.8700)
+[20:48:47] [fold 1] ep   5/40  loss 1.1770  val_acc 0.8000  val_F1 0.7904  (EMA 0.8800 / 0.8799)  lr 4.96e-04  9s
+[20:48:47]     -> 保存最佳权重 (epoch 5, ema, F1=0.8799, acc=0.8800)
+[20:48:56] [fold 1] ep   6/40  loss 1.0153  val_acc 0.9000  val_F1 0.8990  (EMA 0.8900 / 0.8876)  lr 4.92e-04  9s
+[20:48:57]     -> 保存最佳权重 (epoch 6, raw, F1=0.8990, acc=0.9000)
+[20:49:05] [fold 1] ep   7/40  loss 1.1711  val_acc 0.9100  val_F1 0.9094  (EMA 0.9000 / 0.8986)  lr 4.86e-04  9s
+[20:49:06]     -> 保存最佳权重 (epoch 7, raw, F1=0.9094, acc=0.9100)
+[20:49:15] [fold 1] ep   8/40  loss 1.0640  val_acc 0.8500  val_F1 0.8472  (EMA 0.8900 / 0.8887)  lr 4.78e-04  9s
+[20:49:23] [fold 1] ep   9/40  loss 0.9988  val_acc 0.8600  val_F1 0.8571  (EMA 0.8900 / 0.8860)  lr 4.68e-04  9s
+[20:49:32] [fold 1] ep  10/40  loss 0.9573  val_acc 0.8300  val_F1 0.8211  (EMA 0.9000 / 0.8979)  lr 4.57e-04  9s
+[20:49:41] [fold 1] ep  11/40  loss 1.0613  val_acc 0.9100  val_F1 0.9098  (EMA 0.9200 / 0.9183)  lr 4.45e-04  9s
+[20:49:41]     -> 保存最佳权重 (epoch 11, ema, F1=0.9183, acc=0.9200)
+[20:49:50] [fold 1] ep  12/40  loss 1.0741  val_acc 0.8800  val_F1 0.8775  (EMA 0.9100 / 0.9077)  lr 4.31e-04  9s
+[20:50:09] [fold 1] ep  13/40  loss 0.9435  val_acc 0.9100  val_F1 0.9104  (EMA 0.9200 / 0.9192)  lr 4.15e-04  19s
+[20:50:11]     -> 保存最佳权重 (epoch 13, ema, F1=0.9192, acc=0.9200)
+[20:50:21] [fold 1] ep  14/40  loss 0.9484  val_acc 0.9300  val_F1 0.9295  (EMA 0.9200 / 0.9192)  lr 3.99e-04  10s
+[20:50:22]     -> 保存最佳权重 (epoch 14, raw, F1=0.9295, acc=0.9300)
+[20:50:32] [fold 1] ep  15/40  loss 0.9566  val_acc 0.9300  val_F1 0.9292  (EMA 0.9100 / 0.9103)  lr 3.81e-04  10s
+[20:50:43] [fold 1] ep  16/40  loss 0.9696  val_acc 0.8800  val_F1 0.8765  (EMA 0.9200 / 0.9203)  lr 3.63e-04  11s
+[20:50:54] [fold 1] ep  17/40  loss 0.9551  val_acc 0.9000  val_F1 0.8970  (EMA 0.9100 / 0.9077)  lr 3.44e-04  11s
+[20:51:05] [fold 1] ep  18/40  loss 1.0173  val_acc 0.8800  val_F1 0.8772  (EMA 0.9000 / 0.8991)  lr 3.24e-04  11s
+[20:51:16] [fold 1] ep  19/40  loss 0.9420  val_acc 0.9100  val_F1 0.9071  (EMA 0.9200 / 0.9183)  lr 3.03e-04  11s
+[20:51:26] [fold 1] ep  20/40  loss 0.9234  val_acc 0.9300  val_F1 0.9278  (EMA 0.9200 / 0.9183)  lr 2.82e-04  11s
+[20:51:36] [fold 1] ep  21/40  loss 0.9074  val_acc 0.9100  val_F1 0.9091  (EMA 0.9200 / 0.9181)  lr 2.61e-04  10s
+[20:51:48] [fold 1] ep  22/40  loss 1.0131  val_acc 0.9300  val_F1 0.9277  (EMA 0.9200 / 0.9181)  lr 2.40e-04  11s
+[20:51:58] [fold 1] ep  23/40  loss 0.9623  val_acc 0.9100  val_F1 0.9071  (EMA 0.9100 / 0.9077)  lr 2.19e-04  11s
+[20:52:10] [fold 1] ep  24/40  loss 0.7733  val_acc 0.9100  val_F1 0.9058  (EMA 0.9300 / 0.9287)  lr 1.98e-04  12s
+[20:52:21] [fold 1] ep  25/40  loss 0.9032  val_acc 0.9100  val_F1 0.9075  (EMA 0.9300 / 0.9287)  lr 1.77e-04  11s
+[20:52:31] [fold 1] ep  26/40  loss 0.8817  val_acc 0.9500  val_F1 0.9500  (EMA 0.9400 / 0.9392)  lr 1.57e-04  10s
+[20:52:32]     -> 保存最佳权重 (epoch 26, raw, F1=0.9500, acc=0.9500)
+[20:52:43] [fold 1] ep  27/40  loss 0.8575  val_acc 0.9000  val_F1 0.8943  (EMA 0.9400 / 0.9392)  lr 1.38e-04  11s
+[20:52:54] [fold 1] ep  28/40  loss 0.8799  val_acc 0.9300  val_F1 0.9278  (EMA 0.9400 / 0.9392)  lr 1.20e-04  11s
+[20:53:05] [fold 1] ep  29/40  loss 0.9633  val_acc 0.9200  val_F1 0.9170  (EMA 0.9400 / 0.9392)  lr 1.02e-04  11s
+[20:53:15] [fold 1] ep  30/40  loss 0.8163  val_acc 0.9300  val_F1 0.9275  (EMA 0.9500 / 0.9490)  lr 8.57e-05  10s
+[20:53:27] [fold 1] ep  31/40  loss 0.8476  val_acc 0.9500  val_F1 0.9492  (EMA 0.9500 / 0.9490)  lr 7.04e-05  12s
+[20:53:38] [fold 1] ep  32/40  loss 0.8249  val_acc 0.9400  val_F1 0.9385  (EMA 0.9500 / 0.9490)  lr 5.64e-05  11s
+[20:53:51] [fold 1] ep  33/40  loss 0.8610  val_acc 0.9700  val_F1 0.9699  (EMA 0.9500 / 0.9490)  lr 4.38e-05  13s
+[20:53:52]     -> 保存最佳权重 (epoch 33, raw, F1=0.9699, acc=0.9700)
+[20:54:03] [fold 1] ep  34/40  loss 0.8241  val_acc 0.9600  val_F1 0.9597  (EMA 0.9700 / 0.9697)  lr 3.27e-05  11s
+[20:54:15] [fold 1] ep  35/40  loss 0.8591  val_acc 0.9600  val_F1 0.9597  (EMA 0.9700 / 0.9697)  lr 2.31e-05  12s
+[20:54:28] [fold 1] ep  36/40  loss 0.7967  val_acc 0.9600  val_F1 0.9597  (EMA 0.9700 / 0.9697)  lr 1.53e-05  13s
+[20:54:42] [fold 1] ep  37/40  loss 0.8253  val_acc 0.9700  val_F1 0.9697  (EMA 0.9700 / 0.9697)  lr 9.05e-06  14s
+[20:54:59] [fold 1] ep  38/40  loss 0.4498  val_acc 0.9700  val_F1 0.9697  (EMA 0.9700 / 0.9697)  lr 4.59e-06  17s
+[20:55:15] [fold 1] ep  39/40  loss 0.4329  val_acc 0.9700  val_F1 0.9697  (EMA 0.9700 / 0.9697)  lr 1.90e-06  16s
+[20:55:23] [fold 1] ep  40/40  loss 0.4367  val_acc 0.9700  val_F1 0.9697  (EMA 0.9700 / 0.9697)  lr 1.00e-06  9s
+[20:55:35] [fold 1] 完成  最佳 epoch=33  用时 7m42s
+
+各类别 F1 / 召回 / 精确率:
+    类别                                   n       F1   recall     prec
+    Black-grass                         20   0.9474   0.9000   1.0000
+    Common wheat                        20   0.9524   1.0000   0.9091
+    Loose Silky-bent                    20   0.9500   0.9500   0.9500
+    Scentless Mayweed                   20   1.0000   1.0000   1.0000
+    Sugar beet                          20   1.0000   1.0000   1.0000
+[20:55:35] [fold 2] 训练集 400 张 / 验证集 100 张 / 测试集 378 张
+[20:55:55] [fold 2] ep   1/40  loss 1.4665  val_acc 0.7700  val_F1 0.7594  (EMA 0.7400 / 0.7472)  lr 1.69e-04  19s
+[20:55:56]     -> 保存最佳权重 (epoch 1, raw, F1=0.7594, acc=0.7700)
+[20:56:13] [fold 2] ep   2/40  loss 1.0978  val_acc 0.7600  val_F1 0.7258  (EMA 0.8200 / 0.8070)  lr 3.38e-04  16s
+[20:56:14]     -> 保存最佳权重 (epoch 2, ema, F1=0.8070, acc=0.8200)
+[20:56:27] [fold 2] ep   3/40  loss 1.1213  val_acc 0.7700  val_F1 0.7239  (EMA 0.8600 / 0.8574)  lr 5.00e-04  13s
+[20:56:27]     -> 保存最佳权重 (epoch 3, ema, F1=0.8574, acc=0.8600)
+[20:56:39] [fold 2] ep   4/40  loss 1.1649  val_acc 0.7300  val_F1 0.7139  (EMA 0.8600 / 0.8573)  lr 4.99e-04  11s
+[20:56:51] [fold 2] ep   5/40  loss 1.1224  val_acc 0.8100  val_F1 0.8037  (EMA 0.8300 / 0.8300)  lr 4.96e-04  12s
+[20:57:06] [fold 2] ep   6/40  loss 1.0933  val_acc 0.8900  val_F1 0.8904  (EMA 0.8600 / 0.8587)  lr 4.92e-04  16s
+[20:57:08]     -> 保存最佳权重 (epoch 6, raw, F1=0.8904, acc=0.8900)
+[20:57:23] [fold 2] ep   7/40  loss 1.1741  val_acc 0.8100  val_F1 0.8060  (EMA 0.8600 / 0.8586)  lr 4.86e-04  15s
+[20:57:39] [fold 2] ep   8/40  loss 1.0021  val_acc 0.8500  val_F1 0.8468  (EMA 0.9000 / 0.9000)  lr 4.78e-04  16s
+[20:57:40]     -> 保存最佳权重 (epoch 8, ema, F1=0.9000, acc=0.9000)
+[20:57:56] [fold 2] ep   9/40  loss 1.0139  val_acc 0.8800  val_F1 0.8779  (EMA 0.8800 / 0.8797)  lr 4.68e-04  16s
+[20:58:11] [fold 2] ep  10/40  loss 0.9426  val_acc 0.8200  val_F1 0.8057  (EMA 0.8800 / 0.8787)  lr 4.57e-04  16s
+[20:58:27] [fold 2] ep  11/40  loss 0.9746  val_acc 0.8800  val_F1 0.8771  (EMA 0.9000 / 0.8997)  lr 4.45e-04  16s
+[20:58:43] [fold 2] ep  12/40  loss 0.9723  val_acc 0.8800  val_F1 0.8772  (EMA 0.8900 / 0.8880)  lr 4.31e-04  16s
+[20:58:59] [fold 2] ep  13/40  loss 0.9873  val_acc 0.8800  val_F1 0.8788  (EMA 0.8900 / 0.8899)  lr 4.15e-04  16s
+[20:59:14] [fold 2] ep  14/40  loss 1.0349  val_acc 0.9400  val_F1 0.9400  (EMA 0.9200 / 0.9192)  lr 3.99e-04  16s
+[20:59:16]     -> 保存最佳权重 (epoch 14, raw, F1=0.9400, acc=0.9400)
+[20:59:31] [fold 2] ep  15/40  loss 1.0355  val_acc 0.8300  val_F1 0.8268  (EMA 0.9300 / 0.9300)  lr 3.81e-04  16s
+[20:59:47] [fold 2] ep  16/40  loss 1.0124  val_acc 0.8900  val_F1 0.8897  (EMA 0.9200 / 0.9198)  lr 3.63e-04  16s
+[21:00:02] [fold 2] ep  17/40  loss 0.8530  val_acc 0.9000  val_F1 0.8958  (EMA 0.9100 / 0.9099)  lr 3.44e-04  16s
+[21:00:18] [fold 2] ep  18/40  loss 0.9372  val_acc 0.9100  val_F1 0.9099  (EMA 0.8900 / 0.8899)  lr 3.24e-04  16s
+[21:00:34] [fold 2] ep  19/40  loss 0.9622  val_acc 0.9000  val_F1 0.8990  (EMA 0.8900 / 0.8899)  lr 3.03e-04  15s
+[21:00:49] [fold 2] ep  20/40  loss 0.8835  val_acc 0.8900  val_F1 0.8897  (EMA 0.9000 / 0.9000)  lr 2.82e-04  15s
+[21:01:04] [fold 2] ep  21/40  loss 1.0455  val_acc 0.9100  val_F1 0.9086  (EMA 0.9100 / 0.9099)  lr 2.61e-04  15s
+[21:01:20] [fold 2] ep  22/40  loss 0.9227  val_acc 0.9200  val_F1 0.9198  (EMA 0.9100 / 0.9099)  lr 2.40e-04  15s
+[21:01:35] [fold 2] ep  23/40  loss 0.8494  val_acc 0.9000  val_F1 0.9000  (EMA 0.9100 / 0.9099)  lr 2.19e-04  15s
+[21:01:50] [fold 2] ep  24/40  loss 0.9301  val_acc 0.9000  val_F1 0.8977  (EMA 0.9000 / 0.8997)  lr 1.98e-04  15s
+[21:02:06] [fold 2] ep  25/40  loss 0.8597  val_acc 0.9100  val_F1 0.9095  (EMA 0.9000 / 0.8997)  lr 1.77e-04  15s
+[21:02:21] [fold 2] ep  26/40  loss 0.8781  val_acc 0.9400  val_F1 0.9400  (EMA 0.9200 / 0.9200)  lr 1.57e-04  15s
+[21:02:36] [fold 2] ep  27/40  loss 0.9065  val_acc 0.9200  val_F1 0.9198  (EMA 0.9200 / 0.9200)  lr 1.38e-04  15s
+[21:02:52] [fold 2] ep  28/40  loss 0.9134  val_acc 0.9200  val_F1 0.9200  (EMA 0.9200 / 0.9200)  lr 1.20e-04  15s
+[21:03:07] [fold 2] ep  29/40  loss 0.9273  val_acc 0.8900  val_F1 0.8880  (EMA 0.9200 / 0.9200)  lr 1.02e-04  15s
+[21:03:22] [fold 2] ep  30/40  loss 0.9007  val_acc 0.8900  val_F1 0.8894  (EMA 0.9200 / 0.9200)  lr 8.57e-05  15s
+[21:03:37] [fold 2] ep  31/40  loss 0.8696  val_acc 0.9100  val_F1 0.9099  (EMA 0.9200 / 0.9200)  lr 7.04e-05  15s
+[21:03:53] [fold 2] ep  32/40  loss 0.8623  val_acc 0.9100  val_F1 0.9099  (EMA 0.9200 / 0.9200)  lr 5.64e-05  15s
+[21:04:08] [fold 2] ep  33/40  loss 0.8353  val_acc 0.9100  val_F1 0.9099  (EMA 0.9200 / 0.9200)  lr 4.38e-05  16s
+[21:04:24] [fold 2] ep  34/40  loss 0.8230  val_acc 0.9200  val_F1 0.9200  (EMA 0.9200 / 0.9200)  lr 3.27e-05  15s
+[21:04:39] [fold 2] ep  35/40  loss 0.8007  val_acc 0.9200  val_F1 0.9198  (EMA 0.9200 / 0.9200)  lr 2.31e-05  15s
+[21:04:54] [fold 2] ep  36/40  loss 0.8919  val_acc 0.9300  val_F1 0.9296  (EMA 0.9200 / 0.9200)  lr 1.53e-05  16s
+[21:05:10] [fold 2] ep  37/40  loss 0.8871  val_acc 0.9300  val_F1 0.9300  (EMA 0.9200 / 0.9200)  lr 9.05e-06  15s
+[21:05:25] [fold 2] ep  38/40  loss 0.4373  val_acc 0.9300  val_F1 0.9300  (EMA 0.9300 / 0.9300)  lr 4.59e-06  15s
+[21:05:40] [fold 2] ep  39/40  loss 0.4249  val_acc 0.9300  val_F1 0.9300  (EMA 0.9300 / 0.9300)  lr 1.90e-06  15s
+[21:05:56] [fold 2] ep  40/40  loss 0.4448  val_acc 0.9300  val_F1 0.9300  (EMA 0.9300 / 0.9300)  lr 1.00e-06  15s
+[21:06:11] [fold 2] 完成  最佳 epoch=14  用时 10m34s
+
+各类别 F1 / 召回 / 精确率:
+    类别                                   n       F1   recall     prec
+    Black-grass                         20   0.8500   0.8500   0.8500
+    Common wheat                        20   1.0000   1.0000   1.0000
+    Loose Silky-bent                    20   0.8500   0.8500   0.8500
+    Scentless Mayweed                   20   1.0000   1.0000   1.0000
+    Sugar beet                          20   1.0000   1.0000   1.0000
+[21:06:11] [fold 3] 训练集 400 张 / 验证集 100 张 / 测试集 378 张
+[21:06:43] [fold 3] ep   1/40  loss 1.4109  val_acc 0.8300  val_F1 0.8317  (EMA 0.7800 / 0.7751)  lr 1.69e-04  28s
+[21:06:44]     -> 保存最佳权重 (epoch 1, raw, F1=0.8317, acc=0.8300)
+[21:07:00] [fold 3] ep   2/40  loss 1.1757  val_acc 0.7600  val_F1 0.7380  (EMA 0.8400 / 0.8395)  lr 3.38e-04  16s
+[21:07:01]     -> 保存最佳权重 (epoch 2, ema, F1=0.8395, acc=0.8400)
+[21:07:16] [fold 3] ep   3/40  loss 1.1278  val_acc 0.8300  val_F1 0.8252  (EMA 0.8600 / 0.8599)  lr 5.00e-04  15s
+[21:07:17]     -> 保存最佳权重 (epoch 3, ema, F1=0.8599, acc=0.8600)
+[21:07:33] [fold 3] ep   4/40  loss 1.1245  val_acc 0.7400  val_F1 0.6839  (EMA 0.8900 / 0.8871)  lr 4.99e-04  15s
+[21:07:34]     -> 保存最佳权重 (epoch 4, ema, F1=0.8871, acc=0.8900)
+[21:07:49] [fold 3] ep   5/40  loss 1.1210  val_acc 0.8000  val_F1 0.7811  (EMA 0.9000 / 0.8981)  lr 4.96e-04  15s
+[21:07:51]     -> 保存最佳权重 (epoch 5, ema, F1=0.8981, acc=0.9000)
+[21:08:06] [fold 3] ep   6/40  loss 1.0897  val_acc 0.8400  val_F1 0.8208  (EMA 0.8600 / 0.8526)  lr 4.92e-04  15s
+[21:08:22] [fold 3] ep   7/40  loss 1.0139  val_acc 0.8600  val_F1 0.8601  (EMA 0.8900 / 0.8867)  lr 4.86e-04  16s
+[21:08:37] [fold 3] ep   8/40  loss 1.1049  val_acc 0.8800  val_F1 0.8803  (EMA 0.9200 / 0.9186)  lr 4.78e-04  16s
+[21:08:38]     -> 保存最佳权重 (epoch 8, ema, F1=0.9186, acc=0.9200)
+[21:08:54] [fold 3] ep   9/40  loss 1.1008  val_acc 0.7900  val_F1 0.7667  (EMA 0.9000 / 0.8994)  lr 4.68e-04  16s
+[21:09:09] [fold 3] ep  10/40  loss 1.0268  val_acc 0.9000  val_F1 0.8981  (EMA 0.8700 / 0.8691)  lr 4.57e-04  16s
+[21:09:25] [fold 3] ep  11/40  loss 1.0240  val_acc 0.8600  val_F1 0.8579  (EMA 0.9200 / 0.9201)  lr 4.45e-04  16s
+[21:09:26]     -> 保存最佳权重 (epoch 11, ema, F1=0.9201, acc=0.9200)
+[21:09:42] [fold 3] ep  12/40  loss 0.9767  val_acc 0.8600  val_F1 0.8582  (EMA 0.9100 / 0.9117)  lr 4.31e-04  16s
+[21:09:57] [fold 3] ep  13/40  loss 0.9982  val_acc 0.8800  val_F1 0.8813  (EMA 0.9000 / 0.9014)  lr 4.15e-04  15s
+[21:10:13] [fold 3] ep  14/40  loss 0.9564  val_acc 0.9000  val_F1 0.9000  (EMA 0.9100 / 0.9107)  lr 3.99e-04  15s
+[21:10:28] [fold 3] ep  15/40  loss 1.0424  val_acc 0.9000  val_F1 0.9002  (EMA 0.9100 / 0.9107)  lr 3.81e-04  15s
+[21:10:43] [fold 3] ep  16/40  loss 0.9276  val_acc 0.8700  val_F1 0.8657  (EMA 0.9200 / 0.9205)  lr 3.63e-04  15s
+[21:10:44]     -> 保存最佳权重 (epoch 16, ema, F1=0.9205, acc=0.9200)
+[21:11:02] [fold 3] ep  17/40  loss 1.0020  val_acc 0.9000  val_F1 0.8996  (EMA 0.9400 / 0.9400)  lr 3.44e-04  18s
+[21:11:03]     -> 保存最佳权重 (epoch 17, ema, F1=0.9400, acc=0.9400)
+[21:11:18] [fold 3] ep  18/40  loss 0.9341  val_acc 0.9100  val_F1 0.9082  (EMA 0.9400 / 0.9400)  lr 3.24e-04  15s
+[21:11:34] [fold 3] ep  19/40  loss 0.9646  val_acc 0.9000  val_F1 0.8994  (EMA 0.9500 / 0.9500)  lr 3.03e-04  15s
+[21:11:35]     -> 保存最佳权重 (epoch 19, ema, F1=0.9500, acc=0.9500)
+[21:11:50] [fold 3] ep  20/40  loss 0.9785  val_acc 0.9000  val_F1 0.8995  (EMA 0.9400 / 0.9402)  lr 2.82e-04  15s
+[21:12:05] [fold 3] ep  21/40  loss 0.9411  val_acc 0.9000  val_F1 0.8984  (EMA 0.9400 / 0.9402)  lr 2.61e-04  15s
+[21:12:20] [fold 3] ep  22/40  loss 0.9377  val_acc 0.9400  val_F1 0.9395  (EMA 0.9400 / 0.9402)  lr 2.40e-04  15s
+[21:12:35] [fold 3] ep  23/40  loss 0.9618  val_acc 0.8600  val_F1 0.8552  (EMA 0.9500 / 0.9502)  lr 2.19e-04  15s
+[21:12:36]     -> 保存最佳权重 (epoch 23, ema, F1=0.9502, acc=0.9500)
+[21:12:51] [fold 3] ep  24/40  loss 0.9295  val_acc 0.9400  val_F1 0.9401  (EMA 0.9500 / 0.9502)  lr 1.98e-04  15s
+[21:13:07] [fold 3] ep  25/40  loss 0.9326  val_acc 0.9400  val_F1 0.9401  (EMA 0.9500 / 0.9502)  lr 1.77e-04  15s
+[21:13:22] [fold 3] ep  26/40  loss 1.0195  val_acc 0.9400  val_F1 0.9402  (EMA 0.9400 / 0.9402)  lr 1.57e-04  16s
+[21:13:38] [fold 3] ep  27/40  loss 0.8959  val_acc 0.9400  val_F1 0.9402  (EMA 0.9500 / 0.9502)  lr 1.38e-04  15s
+[21:13:53] [fold 3] ep  28/40  loss 0.8547  val_acc 0.9400  val_F1 0.9397  (EMA 0.9500 / 0.9502)  lr 1.20e-04  16s
+[21:14:09] [fold 3] ep  29/40  loss 0.8464  val_acc 0.9300  val_F1 0.9302  (EMA 0.9400 / 0.9402)  lr 1.02e-04  15s
+[21:14:24] [fold 3] ep  30/40  loss 0.7437  val_acc 0.9400  val_F1 0.9400  (EMA 0.9400 / 0.9402)  lr 8.57e-05  15s
+[21:14:39] [fold 3] ep  31/40  loss 0.8306  val_acc 0.9200  val_F1 0.9201  (EMA 0.9400 / 0.9402)  lr 7.04e-05  15s
+[21:14:54] [fold 3] ep  32/40  loss 0.7974  val_acc 0.9400  val_F1 0.9401  (EMA 0.9400 / 0.9402)  lr 5.64e-05  15s
+[21:15:09] [fold 3] ep  33/40  loss 0.9457  val_acc 0.9400  val_F1 0.9402  (EMA 0.9400 / 0.9402)  lr 4.38e-05  15s
+[21:15:25] [fold 3] ep  34/40  loss 0.7714  val_acc 0.9400  val_F1 0.9402  (EMA 0.9400 / 0.9402)  lr 3.27e-05  15s
+[21:15:40] [fold 3] ep  35/40  loss 0.8752  val_acc 0.9300  val_F1 0.9302  (EMA 0.9400 / 0.9402)  lr 2.31e-05  15s
+[21:15:55] [fold 3] ep  36/40  loss 0.8603  val_acc 0.9500  val_F1 0.9500  (EMA 0.9400 / 0.9402)  lr 1.53e-05  15s
+[21:16:11] [fold 3] ep  37/40  loss 0.7798  val_acc 0.9500  val_F1 0.9500  (EMA 0.9400 / 0.9402)  lr 9.05e-06  15s
+[21:16:26] [fold 3] ep  38/40  loss 0.4382  val_acc 0.9400  val_F1 0.9402  (EMA 0.9400 / 0.9402)  lr 4.59e-06  15s
+[21:16:42] [fold 3] ep  39/40  loss 0.4286  val_acc 0.9400  val_F1 0.9402  (EMA 0.9400 / 0.9402)  lr 1.90e-06  15s
+[21:16:57] [fold 3] ep  40/40  loss 0.4253  val_acc 0.9400  val_F1 0.9402  (EMA 0.9400 / 0.9402)  lr 1.00e-06  16s
+[21:17:13] [fold 3] 完成  最佳 epoch=23  用时 10m57s
+
+各类别 F1 / 召回 / 精确率:
+    类别                                   n       F1   recall     prec
+    Black-grass                         20   0.9268   0.9500   0.9048
+    Common wheat                        20   0.9268   0.9500   0.9048
+    Loose Silky-bent                    20   0.9231   0.9000   0.9474
+    Scentless Mayweed                   20   1.0000   1.0000   1.0000
+    Sugar beet                          20   0.9744   0.9500   1.0000
+[21:17:13] [fold 4] 训练集 400 张 / 验证集 100 张 / 测试集 378 张
+[21:17:45] [fold 4] ep   1/40  loss 1.5262  val_acc 0.6900  val_F1 0.6411  (EMA 0.6600 / 0.6054)  lr 1.69e-04  28s
+[21:17:46]     -> 保存最佳权重 (epoch 1, raw, F1=0.6411, acc=0.6900)
+[21:18:04] [fold 4] ep   2/40  loss 1.1782  val_acc 0.7900  val_F1 0.7285  (EMA 0.8600 / 0.8573)  lr 3.38e-04  19s
+[21:18:06]     -> 保存最佳权重 (epoch 2, ema, F1=0.8573, acc=0.8600)
+[21:18:22] [fold 4] ep   3/40  loss 1.2196  val_acc 0.8200  val_F1 0.7952  (EMA 0.9200 / 0.9192)  lr 5.00e-04  16s
+[21:18:23]     -> 保存最佳权重 (epoch 3, ema, F1=0.9192, acc=0.9200)
+[21:18:39] [fold 4] ep   4/40  loss 1.1683  val_acc 0.7500  val_F1 0.7143  (EMA 0.9100 / 0.9086)  lr 4.99e-04  16s
+[21:18:54] [fold 4] ep   5/40  loss 1.1963  val_acc 0.7300  val_F1 0.7227  (EMA 0.8600 / 0.8494)  lr 4.96e-04  16s
+[21:19:10] [fold 4] ep   6/40  loss 1.1270  val_acc 0.8400  val_F1 0.8220  (EMA 0.9200 / 0.9199)  lr 4.92e-04  15s
+[21:19:11]     -> 保存最佳权重 (epoch 6, ema, F1=0.9199, acc=0.9200)
+[21:19:26] [fold 4] ep   7/40  loss 1.0796  val_acc 0.8600  val_F1 0.8620  (EMA 0.9000 / 0.8989)  lr 4.86e-04  15s
+[21:19:43] [fold 4] ep   8/40  loss 1.1063  val_acc 0.8900  val_F1 0.8878  (EMA 0.9200 / 0.9192)  lr 4.78e-04  17s
+[21:19:59] [fold 4] ep   9/40  loss 1.0518  val_acc 0.8400  val_F1 0.8377  (EMA 0.9300 / 0.9296)  lr 4.68e-04  16s
+[21:20:00]     -> 保存最佳权重 (epoch 9, ema, F1=0.9296, acc=0.9300)
+[21:20:16] [fold 4] ep  10/40  loss 1.0435  val_acc 0.8400  val_F1 0.8350  (EMA 0.9200 / 0.9192)  lr 4.57e-04  16s
+[21:20:31] [fold 4] ep  11/40  loss 0.9261  val_acc 0.8700  val_F1 0.8639  (EMA 0.9300 / 0.9304)  lr 4.45e-04  16s
+[21:20:33]     -> 保存最佳权重 (epoch 11, ema, F1=0.9304, acc=0.9300)
+[21:20:48] [fold 4] ep  12/40  loss 0.9767  val_acc 0.8500  val_F1 0.8460  (EMA 0.9200 / 0.9214)  lr 4.31e-04  16s
+[23:24:20] [fold 4] ep  13/40  loss 1.0199  val_acc 0.8700  val_F1 0.8697  (EMA 0.9300 / 0.9298)  lr 4.15e-04  7412s
+[23:24:43] [fold 4] ep  14/40  loss 0.9967  val_acc 0.8900  val_F1 0.8900  (EMA 0.9300 / 0.9307)  lr 3.99e-04  22s
+[23:24:46]     -> 保存最佳权重 (epoch 14, ema, F1=0.9307, acc=0.9300)
+[23:25:09] [fold 4] ep  15/40  loss 0.9732  val_acc 0.8900  val_F1 0.8898  (EMA 0.9000 / 0.9011)  lr 3.81e-04  23s
+[23:25:32] [fold 4] ep  16/40  loss 0.9723  val_acc 0.8800  val_F1 0.8769  (EMA 0.9300 / 0.9307)  lr 3.63e-04  23s
+[23:25:55] [fold 4] ep  17/40  loss 0.9900  val_acc 0.8900  val_F1 0.8896  (EMA 0.9100 / 0.9106)  lr 3.44e-04  23s
+[23:26:18] [fold 4] ep  18/40  loss 0.8747  val_acc 0.8900  val_F1 0.8905  (EMA 0.9200 / 0.9209)  lr 3.24e-04  24s
+[23:26:41] [fold 4] ep  19/40  loss 1.0264  val_acc 0.8700  val_F1 0.8733  (EMA 0.9300 / 0.9307)  lr 3.03e-04  23s
+[23:27:05] [fold 4] ep  20/40  loss 0.8614  val_acc 0.9100  val_F1 0.9104  (EMA 0.9200 / 0.9209)  lr 2.82e-04  24s
+[23:27:29] [fold 4] ep  21/40  loss 0.8660  val_acc 0.8900  val_F1 0.8892  (EMA 0.9200 / 0.9205)  lr 2.61e-04  24s
+[23:27:53] [fold 4] ep  22/40  loss 1.0007  val_acc 0.8900  val_F1 0.8901  (EMA 0.9100 / 0.9106)  lr 2.40e-04  24s

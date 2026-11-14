@@ -1,0 +1,575 @@
+[19:21:17] 设备: CUDA:NVIDIA GeForce RTX 4060 Laptop GPU (8.0 GB), torch=2.11.0+cu128, cuda=12.8
+[19:21:17] 参数: {"data": "data/raw/2026task2", "cache": null, "out": null, "tag": "cxt128", "model": "convnext_tiny", "img_size": 128, "no_pretrained": false, "drop_path": 0.1, "epochs": 35, "batch_size": 192, "lr": 0.0003, "wd": 0.05, "warmup_epochs": 3.0, "label_smoothing": 0.1, "mixup": 0.2, "cutmix": 1.0, "mixup_prob": 0.5, "no_mix_last": 5, "ema_decay": 0.999, "grad_clip": 5.0, "folds": 5, "fold": -1, "seed": 42, "tta": 2, "limit_frac": 1.0, "log_interval": 60}
+[19:21:18] 
+数据根目录: D:\东大\kaggle\data\raw\2026task2\fer_data\fer_data
+训练集: 28275 张   测试集: 7065 张
+样例提交: D:\东大\kaggle\data\raw\2026task2\submission.csv
+
+训练集类别分布:
+    [0] Angry        3963  (14.02%)
+    [1] Fear         4097  (14.49%)
+    [2] Happy        7192  (25.44%)
+    [3] Neutral      4959  (17.54%)
+    [4] Sad          4862  (17.20%)
+    [5] Surprise     3202  (11.32%)
+[19:21:18] 样例提交列名与顺序以 D:\东大\kaggle\data\raw\2026task2\submission.csv 为准
+[19:21:18] ===== fold 0  训练 22620 / 验证 5655 =====
+[19:24:11]   epoch   1 step 60/118 loss=1.7185 lr=5.08e-05
+[19:25:31]   epoch   1/35  loss=1.6068  acc_raw=0.5492  acc_ema=0.5526  耗时 4m11s
+[19:25:31]   * 新的最佳：0.5526（ema 权重, epoch 1）
+[19:25:44]   epoch   2 step 60/118 loss=1.4400 lr=1.51e-04
+[19:26:01]   epoch   2/35  loss=1.3946  acc_raw=0.6140  acc_ema=0.6143  耗时 30s
+[19:26:01]   * 新的最佳：0.6143（ema 权重, epoch 2）
+[19:26:17]   epoch   3 step 60/118 loss=1.3129 lr=2.51e-04
+[19:26:40]   epoch   3/35  loss=1.2967  acc_raw=0.6051  acc_ema=0.6338  耗时 38s
+[19:26:41]   * 新的最佳：0.6338（ema 权重, epoch 3）
+[19:27:01]   epoch   4 step 60/118 loss=1.2864 lr=3.00e-04
+[19:27:25]   epoch   4/35  loss=1.2567  acc_raw=0.6354  acc_ema=0.6493  耗时 43s
+[19:27:25]   * 新的最佳：0.6493（ema 权重, epoch 4）
+[19:27:46]   epoch   5 step 60/118 loss=1.2671 lr=2.98e-04
+[19:28:12]   epoch   5/35  loss=1.2334  acc_raw=0.6444  acc_ema=0.6631  耗时 46s
+[19:28:13]   * 新的最佳：0.6631（ema 权重, epoch 5）
+[19:28:33]   epoch   6 step 60/118 loss=1.2033 lr=2.96e-04
+[19:28:57]   epoch   6/35  loss=1.1873  acc_raw=0.6612  acc_ema=0.6690  耗时 44s
+[19:28:58]   * 新的最佳：0.6690（ema 权重, epoch 6）
+[19:29:20]   epoch   7 step 60/118 loss=1.1649 lr=2.91e-04
+[19:29:44]   epoch   7/35  loss=1.1546  acc_raw=0.6667  acc_ema=0.6744  耗时 45s
+[19:29:45]   * 新的最佳：0.6744（ema 权重, epoch 7）
+[19:30:05]   epoch   8 step 60/118 loss=1.1271 lr=2.86e-04
+[19:30:29]   epoch   8/35  loss=1.1337  acc_raw=0.6653  acc_ema=0.6805  耗时 44s
+[19:30:30]   * 新的最佳：0.6805（ema 权重, epoch 8）
+[19:30:52]   epoch   9 step 60/118 loss=1.1025 lr=2.79e-04
+[19:31:19]   epoch   9/35  loss=1.0804  acc_raw=0.6677  acc_ema=0.6817  耗时 48s
+[19:31:20]   * 新的最佳：0.6817（ema 权重, epoch 9）
+[19:31:41]   epoch  10 step 60/118 loss=1.0592 lr=2.71e-04
+[19:32:06]   epoch  10/35  loss=1.0682  acc_raw=0.6713  acc_ema=0.6879  耗时 46s
+[19:32:07]   * 新的最佳：0.6879（ema 权重, epoch 10）
+[19:32:29]   epoch  11 step 60/118 loss=1.0673 lr=2.62e-04
+[19:32:55]   epoch  11/35  loss=1.0889  acc_raw=0.6658  acc_ema=0.6874  耗时 47s
+[19:33:18]   epoch  12 step 60/118 loss=1.0337 lr=2.51e-04
+[19:33:47]   epoch  12/35  loss=0.9833  acc_raw=0.6709  acc_ema=0.6893  耗时 51s
+[19:33:47]   * 新的最佳：0.6893（ema 权重, epoch 12）
+[19:34:10]   epoch  13 step 60/118 loss=1.0147 lr=2.40e-04
+[19:34:34]   epoch  13/35  loss=0.9865  acc_raw=0.6702  acc_ema=0.6900  耗时 47s
+[19:34:35]   * 新的最佳：0.6900（ema 权重, epoch 13）
+[19:34:58]   epoch  14 step 60/118 loss=1.0309 lr=2.28e-04
+[19:35:24]   epoch  14/35  loss=1.0050  acc_raw=0.6681  acc_ema=0.6891  耗时 48s
+[19:35:47]   epoch  15 step 60/118 loss=1.0041 lr=2.15e-04
+[19:36:13]   epoch  15/35  loss=0.9957  acc_raw=0.6727  acc_ema=0.6904  耗时 49s
+[19:36:14]   * 新的最佳：0.6904（ema 权重, epoch 15）
+[19:36:37]   epoch  16 step 60/118 loss=0.9476 lr=2.02e-04
+[19:37:03]   epoch  16/35  loss=0.9617  acc_raw=0.6805  acc_ema=0.6914  耗时 48s
+[19:37:04]   * 新的最佳：0.6914（ema 权重, epoch 16）
+[19:37:28]   epoch  17 step 60/118 loss=0.9482 lr=1.88e-04
+[19:37:53]   epoch  17/35  loss=0.9063  acc_raw=0.6810  acc_ema=0.6916  耗时 49s
+[19:37:54]   * 新的最佳：0.6916（ema 权重, epoch 17）
+[19:38:18]   epoch  18 step 60/118 loss=0.8434 lr=1.73e-04
+[19:38:44]   epoch  18/35  loss=0.8475  acc_raw=0.6693  acc_ema=0.6889  耗时 49s
+[19:39:10]   epoch  19 step 60/118 loss=0.7999 lr=1.59e-04
+[19:39:35]   epoch  19/35  loss=0.8318  acc_raw=0.6767  acc_ema=0.6893  耗时 50s
+[19:39:57]   epoch  20 step 60/118 loss=0.8675 lr=1.44e-04
+[19:40:22]   epoch  20/35  loss=0.8780  acc_raw=0.6762  acc_ema=0.6909  耗时 47s
+[19:40:47]   epoch  21 step 60/118 loss=0.8296 lr=1.30e-04
+[19:41:12]   epoch  21/35  loss=0.8595  acc_raw=0.6819  acc_ema=0.6898  耗时 49s
+[19:41:36]   epoch  22 step 60/118 loss=0.7792 lr=1.15e-04
+[19:42:02]   epoch  22/35  loss=0.7501  acc_raw=0.6764  acc_ema=0.6886  耗时 49s
+[19:42:25]   epoch  23 step 60/118 loss=0.8140 lr=1.01e-04
+[19:42:50]   epoch  23/35  loss=0.7759  acc_raw=0.6771  acc_ema=0.6889  耗时 48s
+[19:43:13]   epoch  24 step 60/118 loss=0.8341 lr=8.80e-05
+[19:43:40]   epoch  24/35  loss=0.8084  acc_raw=0.6882  acc_ema=0.6897  耗时 49s
+[19:44:03]   epoch  25 step 60/118 loss=0.7628 lr=7.52e-05
+[19:44:28]   epoch  25/35  loss=0.8015  acc_raw=0.6888  acc_ema=0.6904  耗时 48s
+[19:44:52]   epoch  26 step 60/118 loss=0.7356 lr=6.30e-05
+[19:45:17]   epoch  26/35  loss=0.7427  acc_raw=0.6905  acc_ema=0.6902  耗时 48s
+[19:45:41]   epoch  27 step 60/118 loss=0.7318 lr=5.18e-05
+[19:46:06]   epoch  27/35  loss=0.7799  acc_raw=0.6877  acc_ema=0.6916  耗时 49s
+[19:46:31]   epoch  28 step 60/118 loss=0.7670 lr=4.15e-05
+[19:46:56]   epoch  28/35  loss=0.7668  acc_raw=0.6916  acc_ema=0.6914  耗时 49s
+[19:47:19]   epoch  29 step 60/118 loss=0.6991 lr=3.22e-05
+[19:47:43]   epoch  29/35  loss=0.7821  acc_raw=0.6950  acc_ema=0.6918  耗时 47s
+[19:47:44]   * 新的最佳：0.6950（raw 权重, epoch 29）
+[19:48:07]   epoch  30 step 60/118 loss=0.7567 lr=2.41e-05
+[19:48:35]   epoch  30/35  loss=0.7473  acc_raw=0.6934  acc_ema=0.6943  耗时 50s
+[19:48:58]   epoch  31 step 60/118 loss=0.5126 lr=1.73e-05
+[19:49:25]   epoch  31/35  loss=0.5150  acc_raw=0.6948  acc_ema=0.6923  耗时 49s
+[19:49:48]   epoch  32 step 60/118 loss=0.5083 lr=1.17e-05
+[19:50:15]   epoch  32/35  loss=0.5079  acc_raw=0.6935  acc_ema=0.6939  耗时 50s
+[19:50:36]   epoch  33 step 60/118 loss=0.5096 lr=7.45e-06
+[19:51:04]   epoch  33/35  loss=0.5096  acc_raw=0.6928  acc_ema=0.6925  耗时 48s
+[19:51:29]   epoch  34 step 60/118 loss=0.5031 lr=4.61e-06
+[19:51:57]   epoch  34/35  loss=0.5075  acc_raw=0.6943  acc_ema=0.6943  耗时 52s
+[19:52:18]   epoch  35 step 60/118 loss=0.5063 lr=3.18e-06
+[19:52:45]   epoch  35/35  loss=0.5051  acc_raw=0.6943  acc_ema=0.6928  耗时 47s
+[19:52:48] fold 0 最佳验证准确率 = 0.6950 (epoch 29, raw 权重)
+[19:52:48] 混淆矩阵（行=真值, 列=预测）:
+           Angry    Fear   Happy  Neutra     Sad  Surpri
+  Angry      500      45      26      90     123       9
+   Fear       97     417      27      79     149      50
+  Happy       27      16    1275      77      26      18
+ Neutra       57      47      59     677     139      13
+    Sad       86      89      39     165     585       8
+ Surpri       17      69      42      20      16     476
+
+              precision    recall  f1-score   support
+
+       Angry     0.6378    0.6305    0.6341       793
+        Fear     0.6105    0.5092    0.5553       819
+       Happy     0.8685    0.8860    0.8772      1439
+     Neutral     0.6110    0.6825    0.6448       992
+         Sad     0.5636    0.6019    0.5821       972
+    Surprise     0.8293    0.7438    0.7842       640
+
+    accuracy                         0.6950      5655
+   macro avg     0.6868    0.6756    0.6796      5655
+weighted avg     0.6968    0.6950    0.6945      5655
+
+[19:53:36] fold 0 测试集概率完成（TTA 视角 2）
+[19:53:36] ===== fold 1  训练 22620 / 验证 5655 =====
+[19:53:55]   epoch   1 step 60/118 loss=1.7352 lr=5.08e-05
+[19:54:23]   epoch   1/35  loss=1.6269  acc_raw=0.5439  acc_ema=0.5577  耗时 42s
+[19:54:23]   * 新的最佳：0.5577（ema 权重, epoch 1）
+[19:54:46]   epoch   2 step 60/118 loss=1.4266 lr=1.51e-04
+[19:55:15]   epoch   2/35  loss=1.4105  acc_raw=0.5818  acc_ema=0.6202  耗时 51s
+[19:55:16]   * 新的最佳：0.6202（ema 权重, epoch 2）
+[19:55:46]   epoch   3 step 60/118 loss=1.3466 lr=2.51e-04
+[19:56:11]   epoch   3/35  loss=1.3186  acc_raw=0.6244  acc_ema=0.6401  耗时 54s
+[19:56:11]   * 新的最佳：0.6401（ema 权重, epoch 3）
+[19:56:36]   epoch   4 step 60/118 loss=1.2764 lr=3.00e-04
+[19:57:03]   epoch   4/35  loss=1.2812  acc_raw=0.6444  acc_ema=0.6653  耗时 51s
+[19:57:04]   * 新的最佳：0.6653（ema 权重, epoch 4）
+[19:57:26]   epoch   5 step 60/118 loss=1.2058 lr=2.98e-04
+[19:57:52]   epoch   5/35  loss=1.2206  acc_raw=0.6573  acc_ema=0.6759  耗时 47s
+[19:57:53]   * 新的最佳：0.6759（ema 权重, epoch 5）
+[19:58:14]   epoch   6 step 60/118 loss=1.2127 lr=2.96e-04
+[19:58:42]   epoch   6/35  loss=1.1955  acc_raw=0.6783  acc_ema=0.6785  耗时 49s
+[19:58:42]   * 新的最佳：0.6785（ema 权重, epoch 6）
+[19:59:06]   epoch   7 step 60/118 loss=1.1790 lr=2.91e-04
+[19:59:30]   epoch   7/35  loss=1.1702  acc_raw=0.6849  acc_ema=0.6872  耗时 48s
+[19:59:31]   * 新的最佳：0.6872（ema 权重, epoch 7）
+[19:59:51]   epoch   8 step 60/118 loss=1.1415 lr=2.86e-04
+[20:24:19]   epoch   8/35  loss=1.1653  acc_raw=0.6681  acc_ema=0.6935  耗时 24m48s
+[20:24:19]   * 新的最佳：0.6935（ema 权重, epoch 8）
+[20:24:33]   epoch   9 step 60/118 loss=1.1607 lr=2.79e-04
+[20:24:50]   epoch   9/35  loss=1.1332  acc_raw=0.6752  acc_ema=0.6946  耗时 30s
+[20:24:50]   * 新的最佳：0.6946（ema 权重, epoch 9）
+[20:25:08]   epoch  10 step 60/118 loss=1.0861 lr=2.71e-04
+[20:25:28]   epoch  10/35  loss=1.0621  acc_raw=0.6858  acc_ema=0.6935  耗时 37s
+[20:25:46]   epoch  11 step 60/118 loss=1.0511 lr=2.62e-04
+[20:26:10]   epoch  11/35  loss=1.0576  acc_raw=0.6826  acc_ema=0.7019  耗时 41s
+[20:26:10]   * 新的最佳：0.7019（ema 权重, epoch 11）
+[20:26:30]   epoch  12 step 60/118 loss=0.9639 lr=2.51e-04
+[20:26:53]   epoch  12/35  loss=1.0165  acc_raw=0.6783  acc_ema=0.7015  耗时 42s
+[20:27:12]   epoch  13 step 60/118 loss=0.9962 lr=2.40e-04
+[20:27:35]   epoch  13/35  loss=0.9850  acc_raw=0.6900  acc_ema=0.7020  耗时 41s
+[20:27:35]   * 新的最佳：0.7020（ema 权重, epoch 13）
+[20:28:00]   epoch  14 step 60/118 loss=0.9596 lr=2.28e-04
+[20:28:34]   epoch  14/35  loss=0.9633  acc_raw=0.6971  acc_ema=0.7066  耗时 58s
+[20:28:34]   * 新的最佳：0.7066（ema 权重, epoch 14）
+[20:28:54]   epoch  15 step 60/118 loss=0.9185 lr=2.15e-04
+[20:29:29]   epoch  15/35  loss=0.9210  acc_raw=0.6877  acc_ema=0.7077  耗时 54s
+[20:29:29]   * 新的最佳：0.7077（ema 权重, epoch 15）
+[20:29:46]   epoch  16 step 60/118 loss=0.9583 lr=2.02e-04
+[20:30:09]   epoch  16/35  loss=0.9335  acc_raw=0.6955  acc_ema=0.7128  耗时 40s
+[20:30:10]   * 新的最佳：0.7128（ema 权重, epoch 16）
+[20:30:35]   epoch  17 step 60/118 loss=0.8558 lr=1.88e-04
+[20:31:21]   epoch  17/35  loss=0.8666  acc_raw=0.6957  acc_ema=0.7114  耗时 1m11s
+[20:31:55]   epoch  18 step 60/118 loss=0.8895 lr=1.73e-04
+[20:32:20]   epoch  18/35  loss=0.8856  acc_raw=0.6974  acc_ema=0.7114  耗时 59s
+[20:32:41]   epoch  19 step 60/118 loss=0.8088 lr=1.59e-04
+[20:33:20]   epoch  19/35  loss=0.8356  acc_raw=0.6950  acc_ema=0.7141  耗时 1m00s
+[20:33:21]   * 新的最佳：0.7141（ema 权重, epoch 19）
+[20:33:54]   epoch  20 step 60/118 loss=0.8039 lr=1.44e-04
+[20:34:19]   epoch  20/35  loss=0.8404  acc_raw=0.6953  acc_ema=0.7125  耗时 57s
+[20:58:23]   epoch  21 step 60/118 loss=0.7846 lr=1.30e-04
+[20:58:49]   epoch  21/35  loss=0.8221  acc_raw=0.7036  acc_ema=0.7084  耗时 24m30s
+[20:59:27]   epoch  22 step 60/118 loss=0.8388 lr=1.15e-04
+[20:59:53]   epoch  22/35  loss=0.8068  acc_raw=0.6994  acc_ema=0.7086  耗时 1m03s
+[21:00:16]   epoch  23 step 60/118 loss=0.7757 lr=1.01e-04
+[21:00:43]   epoch  23/35  loss=0.7810  acc_raw=0.7027  acc_ema=0.7091  耗时 50s
+[21:01:06]   epoch  24 step 60/118 loss=0.8029 lr=8.80e-05
+[21:01:30]   epoch  24/35  loss=0.8106  acc_raw=0.7075  acc_ema=0.7121  耗时 46s
+[21:01:54]   epoch  25 step 60/118 loss=0.7410 lr=7.52e-05
+[21:02:20]   epoch  25/35  loss=0.7618  acc_raw=0.7022  acc_ema=0.7096  耗时 50s
+[21:02:46]   epoch  26 step 60/118 loss=0.7933 lr=6.30e-05
+[21:03:10]   epoch  26/35  loss=0.7918  acc_raw=0.7050  acc_ema=0.7091  耗时 49s
+[21:03:35]   epoch  27 step 60/118 loss=0.7629 lr=5.18e-05
+[21:04:01]   epoch  27/35  loss=0.7535  acc_raw=0.7088  acc_ema=0.7096  耗时 51s
+[21:04:24]   epoch  28 step 60/118 loss=0.7237 lr=4.15e-05
+[21:04:51]   epoch  28/35  loss=0.7392  acc_raw=0.7086  acc_ema=0.7079  耗时 49s
+[21:05:18]   epoch  29 step 60/118 loss=0.7868 lr=3.22e-05
+[21:05:42]   epoch  29/35  loss=0.7747  acc_raw=0.7095  acc_ema=0.7098  耗时 50s
+[21:06:06]   epoch  30 step 60/118 loss=0.7256 lr=2.41e-05
+[21:06:34]   epoch  30/35  loss=0.7778  acc_raw=0.7088  acc_ema=0.7096  耗时 52s
+[21:06:59]   epoch  31 step 60/118 loss=0.5133 lr=1.73e-05
+[21:07:25]   epoch  31/35  loss=0.5126  acc_raw=0.7093  acc_ema=0.7088  耗时 50s
+[21:07:50]   epoch  32 step 60/118 loss=0.5095 lr=1.17e-05
+[21:08:17]   epoch  32/35  loss=0.5086  acc_raw=0.7077  acc_ema=0.7089  耗时 52s
+[21:08:41]   epoch  33 step 60/118 loss=0.5064 lr=7.45e-06
+[21:09:06]   epoch  33/35  loss=0.5069  acc_raw=0.7084  acc_ema=0.7095  耗时 49s
+[21:11:41]   epoch  34 step 60/118 loss=0.5080 lr=4.61e-06
+[21:12:01]   epoch  34/35  loss=0.5066  acc_raw=0.7089  acc_ema=0.7095  耗时 2m55s
+[21:12:23]   epoch  35 step 60/118 loss=0.5024 lr=3.18e-06
+[21:12:47]   epoch  35/35  loss=0.5030  acc_raw=0.7088  acc_ema=0.7088  耗时 46s
+[21:12:50] fold 1 最佳验证准确率 = 0.7141 (epoch 19, ema 权重)
+[21:12:50] 混淆矩阵（行=真值, 列=预测）:
+           Angry    Fear   Happy  Neutra     Sad  Surpri
+  Angry      527      54      37      97      70       8
+   Fear      106     409      18     104     119      63
+  Happy       27      17    1296      65      17      17
+ Neutra       57      34      41     713     136      10
+    Sad       94     108      32     163     568       8
+ Surpri       20      41      23      16      15     525
+
+              precision    recall  f1-score   support
+
+       Angry     0.6342    0.6646    0.6490       793
+        Fear     0.6169    0.4994    0.5520       819
+       Happy     0.8956    0.9006    0.8981      1439
+     Neutral     0.6157    0.7195    0.6636       991
+         Sad     0.6141    0.5838    0.5985       973
+    Surprise     0.8320    0.8203    0.8261       640
+
+    accuracy                         0.7141      5655
+   macro avg     0.7014    0.6980    0.6979      5655
+weighted avg     0.7139    0.7141    0.7123      5655
+
+[21:13:18] fold 1 测试集概率完成（TTA 视角 2）
+[21:13:18] ===== fold 2  训练 22620 / 验证 5655 =====
+[21:13:40]   epoch   1 step 60/118 loss=1.7413 lr=5.08e-05
+[21:14:07]   epoch   1/35  loss=1.6348  acc_raw=0.5538  acc_ema=0.5537  耗时 46s
+[21:14:07]   * 新的最佳：0.5538（raw 权重, epoch 1）
+[21:14:29]   epoch   2 step 60/118 loss=1.4174 lr=1.51e-04
+[21:14:58]   epoch   2/35  loss=1.3879  acc_raw=0.6138  acc_ema=0.6113  耗时 50s
+[21:14:58]   * 新的最佳：0.6138（raw 权重, epoch 2）
+[21:15:21]   epoch   3 step 60/118 loss=1.3262 lr=2.51e-04
+[21:15:50]   epoch   3/35  loss=1.3090  acc_raw=0.6253  acc_ema=0.6375  耗时 51s
+[21:15:50]   * 新的最佳：0.6375（ema 权重, epoch 3）
+[21:16:12]   epoch   4 step 60/118 loss=1.2586 lr=3.00e-04
+[21:16:40]   epoch   4/35  loss=1.2496  acc_raw=0.6359  acc_ema=0.6571  耗时 49s
+[21:16:40]   * 新的最佳：0.6571（ema 权重, epoch 4）
+[21:17:07]   epoch   5 step 60/118 loss=1.2426 lr=2.98e-04
+[21:17:34]   epoch   5/35  loss=1.2435  acc_raw=0.6271  acc_ema=0.6607  耗时 53s
+[21:17:35]   * 新的最佳：0.6607（ema 权重, epoch 5）
+[21:17:57]   epoch   6 step 60/118 loss=1.2358 lr=2.96e-04
+[21:18:25]   epoch   6/35  loss=1.2168  acc_raw=0.6614  acc_ema=0.6716  耗时 50s
+[21:18:25]   * 新的最佳：0.6716（ema 权重, epoch 6）
+[21:18:49]   epoch   7 step 60/118 loss=1.1680 lr=2.91e-04
+[21:19:16]   epoch   7/35  loss=1.1865  acc_raw=0.6619  acc_ema=0.6750  耗时 50s
+[21:19:17]   * 新的最佳：0.6750（ema 权重, epoch 7）
+[21:19:40]   epoch   8 step 60/118 loss=1.1247 lr=2.86e-04
+[21:20:10]   epoch   8/35  loss=1.1304  acc_raw=0.6718  acc_ema=0.6787  耗时 52s
+[21:20:10]   * 新的最佳：0.6787（ema 权重, epoch 8）
+[21:20:35]   epoch   9 step 60/118 loss=1.1674 lr=2.79e-04
+[21:21:01]   epoch   9/35  loss=1.1133  acc_raw=0.6729  acc_ema=0.6879  耗时 50s
+[21:21:02]   * 新的最佳：0.6879（ema 权重, epoch 9）
+[21:21:26]   epoch  10 step 60/118 loss=1.0761 lr=2.71e-04
+[21:21:54]   epoch  10/35  loss=1.0947  acc_raw=0.6787  acc_ema=0.6881  耗时 51s
+[21:21:55]   * 新的最佳：0.6881（ema 权重, epoch 10）
+[21:22:19]   epoch  11 step 60/118 loss=0.9959 lr=2.62e-04
+[21:22:55]   epoch  11/35  loss=1.0253  acc_raw=0.6691  acc_ema=0.6934  耗时 59s
+[21:22:56]   * 新的最佳：0.6934（ema 权重, epoch 11）
+[21:23:42]   epoch  12 step 60/118 loss=1.0058 lr=2.51e-04
+[21:24:30]   epoch  12/35  loss=1.0161  acc_raw=0.6764  acc_ema=0.6951  耗时 1m34s
+[21:24:31]   * 新的最佳：0.6951（ema 权重, epoch 12）
+[21:25:06]   epoch  13 step 60/118 loss=0.9951 lr=2.40e-04
+[21:25:30]   epoch  13/35  loss=0.9727  acc_raw=0.6845  acc_ema=0.6978  耗时 58s
+[21:25:31]   * 新的最佳：0.6978（ema 权重, epoch 13）
+[21:25:53]   epoch  14 step 60/118 loss=1.0184 lr=2.28e-04
+[21:26:21]   epoch  14/35  loss=0.9916  acc_raw=0.6739  acc_ema=0.6950  耗时 50s
+[21:26:43]   epoch  15 step 60/118 loss=0.9364 lr=2.15e-04
+[21:27:09]   epoch  15/35  loss=0.9167  acc_raw=0.6870  acc_ema=0.6981  耗时 47s
+[21:27:10]   * 新的最佳：0.6981（ema 权重, epoch 15）
+[21:27:33]   epoch  16 step 60/118 loss=0.9405 lr=2.02e-04
+[21:28:00]   epoch  16/35  loss=0.9442  acc_raw=0.6882  acc_ema=0.6955  耗时 50s
+[21:28:25]   epoch  17 step 60/118 loss=0.8490 lr=1.88e-04
+[21:28:53]   epoch  17/35  loss=0.8906  acc_raw=0.6914  acc_ema=0.6994  耗时 52s
+[21:28:53]   * 新的最佳：0.6994（ema 权重, epoch 17）
+[21:29:13]   epoch  18 step 60/118 loss=0.9154 lr=1.73e-04
+[21:29:42]   epoch  18/35  loss=0.9035  acc_raw=0.6852  acc_ema=0.6994  耗时 48s
+[21:30:06]   epoch  19 step 60/118 loss=0.8750 lr=1.59e-04
+[21:30:30]   epoch  19/35  loss=0.8647  acc_raw=0.6900  acc_ema=0.7001  耗时 48s
+[21:30:31]   * 新的最佳：0.7001（ema 权重, epoch 19）
+[21:30:58]   epoch  20 step 60/118 loss=0.9540 lr=1.44e-04
+[21:31:21]   epoch  20/35  loss=0.9093  acc_raw=0.6882  acc_ema=0.7043  耗时 50s
+[21:31:21]   * 新的最佳：0.7043（ema 权重, epoch 20）
+[21:31:45]   epoch  21 step 60/118 loss=0.8015 lr=1.30e-04
+[21:32:09]   epoch  21/35  loss=0.8246  acc_raw=0.6824  acc_ema=0.7020  耗时 47s
+[21:32:33]   epoch  22 step 60/118 loss=0.8164 lr=1.15e-04
+[21:32:59]   epoch  22/35  loss=0.7874  acc_raw=0.6911  acc_ema=0.6992  耗时 50s
+[21:33:22]   epoch  23 step 60/118 loss=0.7888 lr=1.01e-04
+[21:33:46]   epoch  23/35  loss=0.7814  acc_raw=0.6904  acc_ema=0.6978  耗时 46s
+[21:34:11]   epoch  24 step 60/118 loss=0.7049 lr=8.80e-05
+[21:34:36]   epoch  24/35  loss=0.7365  acc_raw=0.6944  acc_ema=0.6990  耗时 50s
+[21:35:03]   epoch  25 step 60/118 loss=0.8813 lr=7.52e-05
+[21:35:28]   epoch  25/35  loss=0.8416  acc_raw=0.6976  acc_ema=0.7008  耗时 52s
+[21:35:53]   epoch  26 step 60/118 loss=0.7530 lr=6.30e-05
+[21:36:17]   epoch  26/35  loss=0.7736  acc_raw=0.6950  acc_ema=0.7015  耗时 48s
+[21:36:39]   epoch  27 step 60/118 loss=0.7659 lr=5.18e-05
+[21:37:06]   epoch  27/35  loss=0.7037  acc_raw=0.6966  acc_ema=0.7013  耗时 48s
+[21:47:45]   epoch  28 step 60/118 loss=0.7194 lr=4.15e-05
+[21:48:29]   epoch  28/35  loss=0.7397  acc_raw=0.6964  acc_ema=0.6999  耗时 11m22s
+[21:48:51]   epoch  29 step 60/118 loss=0.7356 lr=3.22e-05
+[21:49:17]   epoch  29/35  loss=0.7690  acc_raw=0.6980  acc_ema=0.6997  耗时 48s
+[21:49:39]   epoch  30 step 60/118 loss=0.7688 lr=2.41e-05
+[21:50:01]   epoch  30/35  loss=0.7845  acc_raw=0.7006  acc_ema=0.6997  耗时 44s
+[21:50:22]   epoch  31 step 60/118 loss=0.5167 lr=1.73e-05
+[21:50:48]   epoch  31/35  loss=0.5160  acc_raw=0.7004  acc_ema=0.6999  耗时 46s
+[21:51:08]   epoch  32 step 60/118 loss=0.5097 lr=1.17e-05
+[21:51:32]   epoch  32/35  loss=0.5096  acc_raw=0.7001  acc_ema=0.6990  耗时 44s
+[21:51:53]   epoch  33 step 60/118 loss=0.5110 lr=7.45e-06
+[21:52:20]   epoch  33/35  loss=0.5066  acc_raw=0.7013  acc_ema=0.6999  耗时 47s
+[21:52:40]   epoch  34 step 60/118 loss=0.5064 lr=4.61e-06
+[21:53:00]   epoch  34/35  loss=0.5057  acc_raw=0.7004  acc_ema=0.7004  耗时 39s
+[21:53:20]   epoch  35 step 60/118 loss=0.5057 lr=3.18e-06
+[21:53:44]   epoch  35/35  loss=0.5045  acc_raw=0.7001  acc_ema=0.7010  耗时 44s
+[21:53:46] fold 2 最佳验证准确率 = 0.7043 (epoch 20, ema 权重)
+[21:53:47] 混淆矩阵（行=真值, 列=预测）:
+           Angry    Fear   Happy  Neutra     Sad  Surpri
+  Angry      533      52      33      86      71      18
+   Fear       98     403      27      81     138      72
+  Happy       25      20    1274      75      19      25
+ Neutra       51      38      64     726     104       9
+    Sad       89     113      26     190     541      14
+ Surpri       22      56      33      14       9     506
+
+              precision    recall  f1-score   support
+
+       Angry     0.6516    0.6721    0.6617       793
+        Fear     0.5909    0.4921    0.5370       819
+       Happy     0.8744    0.8860    0.8801      1438
+     Neutral     0.6195    0.7319    0.6710       992
+         Sad     0.6134    0.5560    0.5833       973
+    Surprise     0.7857    0.7906    0.7882       640
+
+    accuracy                         0.7043      5655
+   macro avg     0.6892    0.6881    0.6869      5655
+weighted avg     0.7024    0.7043    0.7016      5655
+
+[21:54:11] fold 2 测试集概率完成（TTA 视角 2）
+[21:54:13] ===== fold 3  训练 22620 / 验证 5655 =====
+[21:54:31]   epoch   1 step 60/118 loss=1.7486 lr=5.08e-05
+[21:54:54]   epoch   1/35  loss=1.6230  acc_raw=0.5409  acc_ema=0.5401  耗时 39s
+[21:54:54]   * 新的最佳：0.5409（raw 权重, epoch 1）
+[21:55:15]   epoch   2 step 60/118 loss=1.4012 lr=1.51e-04
+[21:55:38]   epoch   2/35  loss=1.3890  acc_raw=0.6046  acc_ema=0.6074  耗时 43s
+[21:55:39]   * 新的最佳：0.6074（ema 权重, epoch 2）
+[21:55:57]   epoch   3 step 60/118 loss=1.3266 lr=2.51e-04
+[21:56:22]   epoch   3/35  loss=1.3066  acc_raw=0.6025  acc_ema=0.6278  耗时 43s
+[21:56:22]   * 新的最佳：0.6278（ema 权重, epoch 3）
+[21:56:41]   epoch   4 step 60/118 loss=1.2632 lr=3.00e-04
+[21:57:05]   epoch   4/35  loss=1.2667  acc_raw=0.6380  acc_ema=0.6396  耗时 43s
+[21:57:06]   * 新的最佳：0.6396（ema 权重, epoch 4）
+[21:57:24]   epoch   5 step 60/118 loss=1.2126 lr=2.98e-04
+[21:57:47]   epoch   5/35  loss=1.2138  acc_raw=0.6240  acc_ema=0.6573  耗时 41s
+[21:57:47]   * 新的最佳：0.6573（ema 权重, epoch 5）
+[21:58:09]   epoch   6 step 60/118 loss=1.1778 lr=2.96e-04
+[21:58:32]   epoch   6/35  loss=1.1784  acc_raw=0.6661  acc_ema=0.6614  耗时 45s
+[21:58:32]   * 新的最佳：0.6661（raw 权重, epoch 6）
+[22:12:33]   epoch   7 step 60/118 loss=1.1459 lr=2.91e-04
+[22:13:05]   epoch   7/35  loss=1.1607  acc_raw=0.6553  acc_ema=0.6651  耗时 14m32s
+[22:13:30]   epoch   8 step 60/118 loss=1.1490 lr=2.86e-04
+[22:13:57]   epoch   8/35  loss=1.1321  acc_raw=0.6654  acc_ema=0.6711  耗时 52s
+[22:13:58]   * 新的最佳：0.6711（ema 权重, epoch 8）
+[22:14:21]   epoch   9 step 60/118 loss=1.1196 lr=2.79e-04
+[22:14:48]   epoch   9/35  loss=1.1163  acc_raw=0.6591  acc_ema=0.6683  耗时 50s
+[22:15:12]   epoch  10 step 60/118 loss=1.0596 lr=2.71e-04
+[22:15:38]   epoch  10/35  loss=1.0629  acc_raw=0.6688  acc_ema=0.6729  耗时 49s
+[22:15:39]   * 新的最佳：0.6729（ema 权重, epoch 10）
+[22:16:04]   epoch  11 step 60/118 loss=1.0477 lr=2.62e-04
+[22:16:28]   epoch  11/35  loss=1.0478  acc_raw=0.6698  acc_ema=0.6780  耗时 48s
+[22:16:29]   * 新的最佳：0.6780（ema 权重, epoch 11）
+[22:16:53]   epoch  12 step 60/118 loss=0.9959 lr=2.51e-04
+[22:17:21]   epoch  12/35  loss=0.9824  acc_raw=0.6656  acc_ema=0.6824  耗时 52s
+[22:17:22]   * 新的最佳：0.6824（ema 权重, epoch 12）
+[22:17:42]   epoch  13 step 60/118 loss=0.9584 lr=2.40e-04
+[22:17:59]   epoch  13/35  loss=0.9839  acc_raw=0.6628  acc_ema=0.6844  耗时 37s
+[22:17:59]   * 新的最佳：0.6844（ema 权重, epoch 13）
+[22:18:13]   epoch  14 step 60/118 loss=1.0473 lr=2.28e-04
+[22:18:29]   epoch  14/35  loss=1.0147  acc_raw=0.6665  acc_ema=0.6838  耗时 30s
+[22:18:42]   epoch  15 step 60/118 loss=0.9324 lr=2.15e-04
+[22:18:59]   epoch  15/35  loss=0.9497  acc_raw=0.6617  acc_ema=0.6849  耗时 29s
+[22:18:59]   * 新的最佳：0.6849（ema 权重, epoch 15）
+[22:19:12]   epoch  16 step 60/118 loss=0.9255 lr=2.02e-04
+[22:19:29]   epoch  16/35  loss=0.9073  acc_raw=0.6746  acc_ema=0.6870  耗时 29s
+[22:19:29]   * 新的最佳：0.6870（ema 权重, epoch 16）
+[22:19:42]   epoch  17 step 60/118 loss=0.8772 lr=1.88e-04
+[22:19:59]   epoch  17/35  loss=0.8973  acc_raw=0.6787  acc_ema=0.6897  耗时 29s
+[22:19:59]   * 新的最佳：0.6897（ema 权重, epoch 17）
+[22:20:12]   epoch  18 step 60/118 loss=0.8438 lr=1.73e-04
+[22:20:29]   epoch  18/35  loss=0.9068  acc_raw=0.6759  acc_ema=0.6888  耗时 30s
+[22:20:43]   epoch  19 step 60/118 loss=0.8704 lr=1.59e-04
+[22:21:00]   epoch  19/35  loss=0.8891  acc_raw=0.6845  acc_ema=0.6918  耗时 30s
+[22:21:00]   * 新的最佳：0.6918（ema 权重, epoch 19）
+[22:21:13]   epoch  20 step 60/118 loss=0.7944 lr=1.44e-04
+[22:21:30]   epoch  20/35  loss=0.8170  acc_raw=0.6812  acc_ema=0.6934  耗时 30s
+[22:21:30]   * 新的最佳：0.6934（ema 权重, epoch 20）
+[22:21:44]   epoch  21 step 60/118 loss=0.8846 lr=1.30e-04
+[22:22:01]   epoch  21/35  loss=0.8773  acc_raw=0.6746  acc_ema=0.6935  耗时 30s
+[22:22:01]   * 新的最佳：0.6935（ema 权重, epoch 21）
+[22:22:14]   epoch  22 step 60/118 loss=0.7525 lr=1.15e-04
+[22:22:31]   epoch  22/35  loss=0.7743  acc_raw=0.6881  acc_ema=0.6911  耗时 30s
+[22:22:45]   epoch  23 step 60/118 loss=0.8281 lr=1.01e-04
+[22:23:02]   epoch  23/35  loss=0.7960  acc_raw=0.6891  acc_ema=0.6920  耗时 30s
+[22:23:15]   epoch  24 step 60/118 loss=0.8307 lr=8.80e-05
+[22:23:32]   epoch  24/35  loss=0.8393  acc_raw=0.6870  acc_ema=0.6895  耗时 30s
+[22:23:45]   epoch  25 step 60/118 loss=0.7182 lr=7.52e-05
+[22:24:02]   epoch  25/35  loss=0.7222  acc_raw=0.6877  acc_ema=0.6889  耗时 30s
+[22:24:16]   epoch  26 step 60/118 loss=0.6631 lr=6.30e-05
+[22:24:33]   epoch  26/35  loss=0.6989  acc_raw=0.6891  acc_ema=0.6902  耗时 30s
+[22:24:46]   epoch  27 step 60/118 loss=0.7285 lr=5.18e-05
+[22:25:03]   epoch  27/35  loss=0.7009  acc_raw=0.6868  acc_ema=0.6912  耗时 30s
+[22:25:16]   epoch  28 step 60/118 loss=0.7392 lr=4.15e-05
+[22:25:33]   epoch  28/35  loss=0.7467  acc_raw=0.6840  acc_ema=0.6884  耗时 30s
+[22:25:47]   epoch  29 step 60/118 loss=0.6629 lr=3.22e-05
+[22:26:04]   epoch  29/35  loss=0.7210  acc_raw=0.6833  acc_ema=0.6877  耗时 30s
+[22:26:17]   epoch  30 step 60/118 loss=0.7876 lr=2.41e-05
+[22:26:34]   epoch  30/35  loss=0.7697  acc_raw=0.6875  acc_ema=0.6845  耗时 30s
+[22:26:48]   epoch  31 step 60/118 loss=0.5123 lr=1.73e-05
+[22:27:04]   epoch  31/35  loss=0.5102  acc_raw=0.6852  acc_ema=0.6849  耗时 30s
+[22:27:17]   epoch  32 step 60/118 loss=0.5062 lr=1.17e-05
+[22:27:34]   epoch  32/35  loss=0.5064  acc_raw=0.6845  acc_ema=0.6858  耗时 29s
+[22:27:47]   epoch  33 step 60/118 loss=0.5056 lr=7.45e-06
+[22:28:03]   epoch  33/35  loss=0.5055  acc_raw=0.6852  acc_ema=0.6865  耗时 29s
+[22:28:16]   epoch  34 step 60/118 loss=0.5055 lr=4.61e-06
+[22:28:33]   epoch  34/35  loss=0.5032  acc_raw=0.6875  acc_ema=0.6870  耗时 29s
+[22:28:46]   epoch  35 step 60/118 loss=0.5023 lr=3.18e-06
+[22:29:02]   epoch  35/35  loss=0.5048  acc_raw=0.6849  acc_ema=0.6861  耗时 29s
+[22:29:04] fold 3 最佳验证准确率 = 0.6935 (epoch 21, ema 权重)
+[22:29:04] 混淆矩阵（行=真值, 列=预测）:
+           Angry    Fear   Happy  Neutra     Sad  Surpri
+  Angry      507      60      31     108      73      13
+   Fear      114     382      21      97     129      77
+  Happy       23      18    1257      86      26      28
+ Neutra       38      35      71     728     114       6
+    Sad       96     104      25     194     543      10
+ Surpri       15      54      28      25      14     505
+
+              precision    recall  f1-score   support
+
+       Angry     0.6393    0.6402    0.6397       792
+        Fear     0.5850    0.4659    0.5187       820
+       Happy     0.8772    0.8741    0.8757      1438
+     Neutral     0.5880    0.7339    0.6529       992
+         Sad     0.6040    0.5586    0.5804       972
+    Surprise     0.7903    0.7878    0.7891       641
+
+    accuracy                         0.6935      5655
+   macro avg     0.6806    0.6767    0.6761      5655
+weighted avg     0.6940    0.6935    0.6912      5655
+
+[22:29:19] fold 3 测试集概率完成（TTA 视角 2）
+[22:29:19] ===== fold 4  训练 22620 / 验证 5655 =====
+[22:29:39]   epoch   1 step 60/118 loss=1.7087 lr=5.08e-05
+[22:29:56]   epoch   1/35  loss=1.6010  acc_raw=0.5369  acc_ema=0.5478  耗时 30s
+[22:29:56]   * 新的最佳：0.5478（ema 权重, epoch 1）
+[22:30:10]   epoch   2 step 60/118 loss=1.4282 lr=1.51e-04
+[22:30:27]   epoch   2/35  loss=1.3866  acc_raw=0.6104  acc_ema=0.6083  耗时 30s
+[22:30:27]   * 新的最佳：0.6104（raw 权重, epoch 2）
+[22:30:40]   epoch   3 step 60/118 loss=1.3171 lr=2.51e-04
+[22:30:57]   epoch   3/35  loss=1.3030  acc_raw=0.6067  acc_ema=0.6354  耗时 30s
+[22:30:57]   * 新的最佳：0.6354（ema 权重, epoch 3）
+[22:31:11]   epoch   4 step 60/118 loss=1.3022 lr=3.00e-04
+[22:31:28]   epoch   4/35  loss=1.2970  acc_raw=0.6133  acc_ema=0.6555  耗时 30s
+[22:31:28]   * 新的最佳：0.6555（ema 权重, epoch 4）
+[22:31:41]   epoch   5 step 60/118 loss=1.2560 lr=2.98e-04
+[22:31:58]   epoch   5/35  loss=1.2273  acc_raw=0.6508  acc_ema=0.6676  耗时 30s
+[22:31:58]   * 新的最佳：0.6676（ema 权重, epoch 5）
+[22:32:12]   epoch   6 step 60/118 loss=1.2015 lr=2.96e-04
+[22:32:29]   epoch   6/35  loss=1.2059  acc_raw=0.6670  acc_ema=0.6737  耗时 30s
+[22:32:29]   * 新的最佳：0.6737（ema 权重, epoch 6）
+[22:32:42]   epoch   7 step 60/118 loss=1.1635 lr=2.91e-04
+[22:32:59]   epoch   7/35  loss=1.1522  acc_raw=0.6637  acc_ema=0.6782  耗时 30s
+[22:32:59]   * 新的最佳：0.6782（ema 权重, epoch 7）
+[22:33:13]   epoch   8 step 60/118 loss=1.1609 lr=2.86e-04
+[22:33:30]   epoch   8/35  loss=1.1535  acc_raw=0.6859  acc_ema=0.6849  耗时 30s
+[22:33:30]   * 新的最佳：0.6859（raw 权重, epoch 8）
+[22:33:43]   epoch   9 step 60/118 loss=1.1243 lr=2.79e-04
+[22:34:00]   epoch   9/35  loss=1.1291  acc_raw=0.6539  acc_ema=0.6904  耗时 30s
+[22:34:00]   * 新的最佳：0.6904（ema 权重, epoch 9）
+[22:34:14]   epoch  10 step 60/118 loss=1.0665 lr=2.71e-04
+[22:34:31]   epoch  10/35  loss=1.0723  acc_raw=0.6734  acc_ema=0.6973  耗时 30s
+[22:34:31]   * 新的最佳：0.6973（ema 权重, epoch 10）
+[22:34:44]   epoch  11 step 60/118 loss=1.0905 lr=2.62e-04
+[22:35:01]   epoch  11/35  loss=1.0859  acc_raw=0.6721  acc_ema=0.6976  耗时 30s
+[22:35:01]   * 新的最佳：0.6976（ema 权重, epoch 11）
+[22:35:15]   epoch  12 step 60/118 loss=1.0587 lr=2.51e-04
+[22:35:32]   epoch  12/35  loss=1.0506  acc_raw=0.6792  acc_ema=0.6985  耗时 30s
+[22:35:32]   * 新的最佳：0.6985（ema 权重, epoch 12）
+[22:35:45]   epoch  13 step 60/118 loss=1.0255 lr=2.40e-04
+[22:36:02]   epoch  13/35  loss=1.0262  acc_raw=0.6799  acc_ema=0.6974  耗时 30s
+[22:36:16]   epoch  14 step 60/118 loss=0.9979 lr=2.28e-04
+[22:36:33]   epoch  14/35  loss=0.9880  acc_raw=0.6875  acc_ema=0.6969  耗时 30s
+[22:36:46]   epoch  15 step 60/118 loss=0.9968 lr=2.15e-04
+[22:37:03]   epoch  15/35  loss=0.9451  acc_raw=0.6810  acc_ema=0.7006  耗时 30s
+[22:37:03]   * 新的最佳：0.7006（ema 权重, epoch 15）
+[22:37:17]   epoch  16 step 60/118 loss=0.9281 lr=2.02e-04
+[22:37:34]   epoch  16/35  loss=0.9104  acc_raw=0.6907  acc_ema=0.6999  耗时 30s
+[22:37:47]   epoch  17 step 60/118 loss=0.9098 lr=1.88e-04
+[22:38:04]   epoch  17/35  loss=0.9006  acc_raw=0.6859  acc_ema=0.7003  耗时 30s
+[22:38:17]   epoch  18 step 60/118 loss=0.9223 lr=1.73e-04
+[22:38:34]   epoch  18/35  loss=0.8635  acc_raw=0.6884  acc_ema=0.7003  耗时 30s
+[22:38:48]   epoch  19 step 60/118 loss=0.8366 lr=1.59e-04
+[22:39:05]   epoch  19/35  loss=0.8438  acc_raw=0.6824  acc_ema=0.6990  耗时 30s
+[22:39:18]   epoch  20 step 60/118 loss=0.8784 lr=1.44e-04
+[22:39:35]   epoch  20/35  loss=0.8463  acc_raw=0.6900  acc_ema=0.6996  耗时 30s
+[22:39:49]   epoch  21 step 60/118 loss=0.7743 lr=1.30e-04
+[22:40:06]   epoch  21/35  loss=0.8147  acc_raw=0.6946  acc_ema=0.6997  耗时 30s
+[22:40:19]   epoch  22 step 60/118 loss=0.8540 lr=1.15e-04
+[22:40:36]   epoch  22/35  loss=0.8619  acc_raw=0.6904  acc_ema=0.6971  耗时 30s
+[22:40:50]   epoch  23 step 60/118 loss=0.7962 lr=1.01e-04
+[22:41:07]   epoch  23/35  loss=0.7647  acc_raw=0.6914  acc_ema=0.6978  耗时 30s
+[22:41:20]   epoch  24 step 60/118 loss=0.8322 lr=8.80e-05
+[22:41:37]   epoch  24/35  loss=0.8038  acc_raw=0.6877  acc_ema=0.6992  耗时 30s
+[22:41:50]   epoch  25 step 60/118 loss=0.7412 lr=7.52e-05
+[22:42:07]   epoch  25/35  loss=0.7870  acc_raw=0.6939  acc_ema=0.6985  耗时 30s
+[22:42:21]   epoch  26 step 60/118 loss=0.7713 lr=6.30e-05
+[22:42:38]   epoch  26/35  loss=0.7948  acc_raw=0.6987  acc_ema=0.6981  耗时 30s
+[22:42:51]   epoch  27 step 60/118 loss=0.7513 lr=5.18e-05
+[22:43:08]   epoch  27/35  loss=0.7870  acc_raw=0.6918  acc_ema=0.6957  耗时 30s
+[22:43:21]   epoch  28 step 60/118 loss=0.7782 lr=4.15e-05
+[22:43:38]   epoch  28/35  loss=0.7707  acc_raw=0.6946  acc_ema=0.6950  耗时 30s
+[22:43:52]   epoch  29 step 60/118 loss=0.7982 lr=3.22e-05
+[22:44:09]   epoch  29/35  loss=0.7223  acc_raw=0.6923  acc_ema=0.6974  耗时 30s
+[22:44:22]   epoch  30 step 60/118 loss=0.6877 lr=2.41e-05
+[22:44:39]   epoch  30/35  loss=0.6994  acc_raw=0.6955  acc_ema=0.6969  耗时 30s
+[22:44:53]   epoch  31 step 60/118 loss=0.5154 lr=1.73e-05
+[22:45:10]   epoch  31/35  loss=0.5152  acc_raw=0.6927  acc_ema=0.6955  耗时 30s
+[22:45:23]   epoch  32 step 60/118 loss=0.5077 lr=1.17e-05
+[22:45:40]   epoch  32/35  loss=0.5106  acc_raw=0.6955  acc_ema=0.6946  耗时 30s
+[22:45:53]   epoch  33 step 60/118 loss=0.5079 lr=7.45e-06
+[22:46:10]   epoch  33/35  loss=0.5080  acc_raw=0.6939  acc_ema=0.6950  耗时 30s
+[22:46:23]   epoch  34 step 60/118 loss=0.5092 lr=4.61e-06
+[22:46:40]   epoch  34/35  loss=0.5094  acc_raw=0.6958  acc_ema=0.6948  耗时 30s
+[22:46:54]   epoch  35 step 60/118 loss=0.5051 lr=3.18e-06
+[22:47:11]   epoch  35/35  loss=0.5067  acc_raw=0.6934  acc_ema=0.6944  耗时 30s
+[22:47:13] fold 4 最佳验证准确率 = 0.7006 (epoch 15, ema 权重)
+[22:47:13] 混淆矩阵（行=真值, 列=预测）:
+           Angry    Fear   Happy  Neutra     Sad  Surpri
+  Angry      506      53      30     102      93       8
+   Fear       98     435      28      85     108      66
+  Happy       31      13    1261      82      25      26
+ Neutra       37      47      57     726     114      11
+    Sad       81     110      31     205     537       8
+ Surpri       21      67      39      12       5     497
+
+              precision    recall  f1-score   support
+
+       Angry     0.6537    0.6389    0.6462       792
+        Fear     0.6000    0.5305    0.5631       820
+       Happy     0.8721    0.8769    0.8745      1438
+     Neutral     0.5990    0.7319    0.6588       992
+         Sad     0.6088    0.5525    0.5793       972
+    Surprise     0.8068    0.7754    0.7908       641
+
+    accuracy                         0.7006      5655
+   macro avg     0.6901    0.6843    0.6854      5655
+weighted avg     0.7015    0.7006    0.6993      5655
+
+[22:47:28] fold 4 测试集概率完成（TTA 视角 2）
+[22:47:28] 全部折完成:
+[22:47:28]   fold 0: best=0.6950 (raw) 耗时 32m16s
+[22:47:28]   fold 1: best=0.7141 (ema) 耗时 1h19m37s
+[22:47:28]   fold 2: best=0.7043 (ema) 耗时 40m52s
+[22:47:28]   fold 3: best=0.6935 (ema) 耗时 35m04s
+[22:47:28]   fold 4: best=0.7006 (ema) 耗时 18m02s
+[22:47:28] 各折最终 OOF 准确率均值 = 0.7015

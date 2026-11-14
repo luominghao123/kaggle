@@ -1,0 +1,58 @@
+[01:03:31] 设备: CUDA:NVIDIA GeForce RTX 4060 Laptop GPU (8.0 GB), torch=2.11.0+cu128, cuda=12.8
+[01:03:31] 参数: {'data': 'data_fake', 'backbone': 'effnet_b0', 'img_size': 384, 'epochs': 8, 'folds': 2, 'fold': -1, 'batch_size': 16, 'lr': 0.0004, 'weight_decay': 0.05, 'warmup_epochs': 3.0, 'head_dim': 64, 'out_stride': 4, 'drop_path': 0.1, 'sigma_ratio': 0.02, 'coord_weight': 0.5, 'rotate': 12.0, 'scale_min': 0.88, 'scale_max': 1.12, 'shift': 0.05, 'hflip': 0.5, 'color_jitter': 0.25, 'ema_decay': 0.999, 'no_ema': False, 'no_pretrained': False, 'seed': 42, 'tag': 'smoke3', 'out': 'runs', 'cache_mb': 3072, 'limit': 0}
+[01:03:31] 数据布局:
+标签表        : D:\东大\kaggle\data_fake\train.csv
+  ID 列       : 'image_id'
+  坐标列      : x='x'  y='y'
+  坐标单位    : normalized
+  训练样本数  : 160
+  x 范围      : [0.2673, 0.7298]  mean=0.4969
+  y 范围      : [0.5306, 0.7663]  mean=0.6300
+测试图片数    : 40
+sample_submit : D:\东大\kaggle\data_fake\sample_submission.csv
+  提交列名    : ['ID', 'x', 'y']
+[01:03:31] 训练样本 160，测试图片 40，坐标单位 normalized
+[01:03:31] 
+======================================================================
+=== Fold 0: train 80 / val 80
+[01:05:17] 设备: CUDA:NVIDIA GeForce RTX 4060 Laptop GPU (8.0 GB), torch=2.11.0+cu128, cuda=12.8
+[01:05:17] 参数: {'data': 'data_fake', 'backbone': 'effnet_b0', 'img_size': 384, 'epochs': 8, 'folds': 2, 'fold': -1, 'batch_size': 16, 'lr': 0.0004, 'weight_decay': 0.05, 'warmup_epochs': 3.0, 'head_dim': 64, 'out_stride': 4, 'drop_path': 0.1, 'sigma_ratio': 0.02, 'coord_weight': 0.5, 'rotate': 12.0, 'scale_min': 0.88, 'scale_max': 1.12, 'shift': 0.05, 'hflip': 0.5, 'color_jitter': 0.25, 'ema_decay': 0.999, 'no_ema': False, 'no_pretrained': False, 'seed': 42, 'tag': 'smoke3', 'out': 'runs', 'cache_mb': 3072, 'limit': 0}
+[01:05:17] 数据布局:
+标签表        : D:\东大\kaggle\data_fake\train.csv
+  ID 列       : 'image_id'
+  坐标列      : x='x'  y='y'
+  坐标单位    : normalized
+  训练样本数  : 160
+  x 范围      : [0.2673, 0.7298]  mean=0.4969
+  y 范围      : [0.5306, 0.7663]  mean=0.6300
+测试图片数    : 40
+sample_submit : D:\东大\kaggle\data_fake\sample_submission.csv
+  提交列名    : ['ID', 'x', 'y']
+[01:05:17] 训练样本 160，测试图片 40，坐标单位 normalized
+[01:05:17] 
+======================================================================
+=== Fold 0: train 80 / val 80
+[01:07:38]   epoch   1  train_loss 9.1740 (heat 9.129 / xy 0.0906)  val MCRMSE 0.11707  EMA 0.11708  -> best(model) 0.11707
+[01:07:49]   epoch   2  train_loss 9.1732 (heat 9.129 / xy 0.0891)  val MCRMSE 0.11612  EMA 0.11657  -> best(model) 0.11612
+[01:08:00]   epoch   3  train_loss 9.1731 (heat 9.129 / xy 0.0876)  val MCRMSE 0.10474  EMA 0.11092  -> best(model) 0.10474
+[01:08:11]   epoch   4  train_loss 9.1717 (heat 9.132 / xy 0.0790)  val MCRMSE 0.09852  EMA 0.10071  -> best(model) 0.09852
+[01:08:21]   epoch   5  train_loss 9.1704  val MCRMSE 0.10241
+[01:08:52]   epoch   8  train_loss 9.1707  val MCRMSE 0.10046
+[01:09:40]   fold 0 完成: MCRMSE 0.09852  像素误差 mean 81.9 / median 76.5  用时 4m23s
+[01:09:40] 
+======================================================================
+=== Fold 1: train 80 / val 80
+[01:09:54]   epoch   1  train_loss 9.1758 (heat 9.129 / xy 0.0942)  val MCRMSE 0.11065  EMA 0.11067  -> best(model) 0.11065
+[01:10:05]   epoch   2  train_loss 9.1766 (heat 9.129 / xy 0.0958)  val MCRMSE 0.10952  EMA 0.11010  -> best(model) 0.10952
+[01:10:17]   epoch   3  train_loss 9.1750 (heat 9.129 / xy 0.0911)  val MCRMSE 0.09552  EMA 0.10282  -> best(model) 0.09552
+[01:10:33]   epoch   4  train_loss 9.1738 (heat 9.133 / xy 0.0815)  val MCRMSE 0.08428  EMA 0.08840  -> best(model) 0.08428
+[01:10:49]   epoch   5  train_loss 9.1735  val MCRMSE 0.09098
+[01:11:38]   epoch   8  train_loss 9.1711  val MCRMSE 0.09523
+[01:11:41]   fold 1 完成: MCRMSE 0.08428  像素误差 mean 64.8 / median 62.5  用时 2m00s
+[01:11:41] 
+======================================================================
+全部完成，用时 6m24s
+[01:11:41] 平均 MCRMSE 0.09140  平均像素误差 73.3px
+[01:11:41] 缓存状态: letterbox 缓存 200 张 / 84 MB，命中率 95.1%
+[01:11:41] 产物目录: runs\smoke3
+[01:11:41] 下一步: .\run.ps1 -m src.fovea_predict --data data_fake --runs runs\smoke3 --out submissions/smoke3.csv

@@ -1,0 +1,48 @@
+[data] D:\东大\kaggle\实验四\segmentation
+[data] 训练 20 张 / 测试 20 张；尺寸 [(584, 565)]
+[data] 视场内血管比例 0.1253
+[cv] 5 折，seed=42，验证集划分：f0=['1', '14', '20', '3']
+[fold0] 训练 16 张 / 验证 4 张 (['1', '14', '20', '3']) patch=384 epochs=40 steps=40 bs=8 pos_weight=7.19
+[fold0] ep000 loss 1.8962 (bce 1.0456 dice 0.8506) val dice raw 0.4140 ema 0.3345 lr 1.50e-04 *
+[fold0] ep001 loss 1.7423 (bce 0.9058 dice 0.8365) val dice raw 0.4080 ema 0.4876 lr 3.00e-04 *
+[fold0] ep002 loss 1.9184 (bce 1.1005 dice 0.8180) val dice raw 0.5886 ema 0.5289 lr 3.00e-04 *
+[fold0] ep003 loss 1.7983 (bce 0.9581 dice 0.8402) val dice raw 0.5969 ema 0.6267 lr 2.98e-04 *
+[fold0] ep004 loss 1.7340 (bce 0.8923 dice 0.8417) val dice raw 0.6184 ema 0.6001 lr 2.95e-04
+[fold0] ep005 loss 1.7866 (bce 0.9698 dice 0.8169) val dice raw 0.6021 ema 0.6457 lr 2.92e-04 *
+[fold0] ep006 loss 1.8657 (bce 1.0348 dice 0.8309) val dice raw 0.6178 ema 0.6396 lr 2.87e-04
+[fold0] ep007 loss 1.7298 (bce 0.9143 dice 0.8156) val dice raw 0.6536 ema 0.6641 lr 2.82e-04 *
+[fold0] ep008 loss 1.7574 (bce 0.9129 dice 0.8445) val dice raw 0.6557 ema 0.6572 lr 2.76e-04
+[fold0] ep009 loss 1.7741 (bce 0.9410 dice 0.8331) val dice raw 0.6577 ema 0.6514 lr 2.69e-04
+[fold0] ep010 loss 1.7302 (bce 0.9380 dice 0.7921) val dice raw 0.6902 ema 0.6840 lr 2.61e-04 *
+[fold0] ep011 loss 1.6940 (bce 0.8528 dice 0.8412) val dice raw 0.6468 ema 0.6891 lr 2.52e-04
+[fold0] ep012 loss 1.7469 (bce 0.9377 dice 0.8091) val dice raw 0.7143 ema 0.7046 lr 2.42e-04 *
+[fold0] ep013 loss 1.6637 (bce 0.8212 dice 0.8425) val dice raw 0.6560 ema 0.7091 lr 2.32e-04
+[fold0] ep014 loss 1.6642 (bce 0.8842 dice 0.7801) val dice raw 0.6697 ema 0.6965 lr 2.22e-04
+[fold0] ep015 loss 1.5341 (bce 0.7735 dice 0.7606) val dice raw 0.7146 ema 0.7031 lr 2.11e-04 *
+[fold0] ep016 loss 1.7199 (bce 0.9411 dice 0.7788) val dice raw 0.6606 ema 0.6982 lr 1.99e-04
+[fold0] ep017 loss 1.7005 (bce 0.8791 dice 0.8214) val dice raw 0.6931 ema 0.7206 lr 1.87e-04 *
+[fold0] ep018 loss 1.7284 (bce 0.8895 dice 0.8390) val dice raw 0.7133 ema 0.7174 lr 1.75e-04
+[fold0] ep019 loss 1.8683 (bce 1.0400 dice 0.8283) val dice raw 0.7088 ema 0.7161 lr 1.63e-04
+[fold0] ep020 loss 1.7196 (bce 0.9004 dice 0.8192) val dice raw 0.7381 ema 0.7320 lr 1.50e-04 *
+[fold0] ep021 loss 1.8121 (bce 0.9732 dice 0.8389) val dice raw 0.6429 ema 0.7350 lr 1.38e-04
+[fold0] ep022 loss 1.6686 (bce 0.8744 dice 0.7942) val dice raw 0.6577 ema 0.7246 lr 1.26e-04
+[fold0] ep023 loss 1.7668 (bce 0.9549 dice 0.8119) val dice raw 0.7263 ema 0.7175 lr 1.13e-04
+[fold0] ep024 loss 1.7385 (bce 0.8816 dice 0.8569) val dice raw 0.6136 ema 0.7354 lr 1.02e-04
+[fold0] ep025 loss 1.7360 (bce 0.9295 dice 0.8064) val dice raw 0.7281 ema 0.7396 lr 9.00e-05 *
+[fold0] ep026 loss 1.5214 (bce 0.7679 dice 0.7535) val dice raw 0.7064 ema 0.7258 lr 7.89e-05
+[fold0] ep027 loss 1.7487 (bce 0.9336 dice 0.8152) val dice raw 0.6288 ema 0.7136 lr 6.82e-05
+[fold0] ep028 loss 1.7505 (bce 0.9549 dice 0.7956) val dice raw 0.6509 ema 0.7070 lr 5.81e-05
+[fold0] ep029 loss 1.8219 (bce 0.9790 dice 0.8430) val dice raw 0.6861 ema 0.7158 lr 4.86e-05
+[fold0] ep030 loss 1.5990 (bce 0.8135 dice 0.7855) val dice raw 0.7029 ema 0.7141 lr 3.99e-05
+[fold0] ep031 loss 1.5617 (bce 0.7848 dice 0.7769) val dice raw 0.7051 ema 0.7118 lr 3.18e-05
+[fold0] ep032 loss 1.7661 (bce 0.9362 dice 0.8298) val dice raw 0.6582 ema 0.7242 lr 2.46e-05
+[fold0] ep033 loss 1.8100 (bce 0.9782 dice 0.8317) val dice raw 0.5615 ema 0.7230 lr 1.82e-05
+[fold0] ep034 loss 1.6667 (bce 0.8260 dice 0.8408) val dice raw 0.6951 ema 0.7140 lr 1.28e-05
+[fold0] ep035 loss 1.8771 (bce 1.0149 dice 0.8622) val dice raw 0.0000 ema 0.7295 lr 8.23e-06
+[fold0] ep036 loss 1.7476 (bce 0.8779 dice 0.8696) val dice raw 0.6297 ema 0.7364 lr 4.67e-06
+[fold0] ep037 loss 1.7071 (bce 0.9173 dice 0.7898) val dice raw 0.7113 ema 0.7339 lr 2.10e-06
+[fold0] ep038 loss 1.8556 (bce 1.0171 dice 0.8385) val dice raw 0.7465 ema 0.7398 lr 5.38e-07 *
+[fold0] ep039 loss 1.7641 (bce 0.9416 dice 0.8225) val dice raw 0.7463 ema 0.7406 lr 3.20e-10
+[fold0] 最优 ep38（raw）验证 dice 0.7465 sen 0.7047 spe 0.9809 用时 8.1 min
+[oof] 已有 4/20 张 OOF（还有折没跑完）
+[done] 1 折的折均 dice 0.7465 iou 0.5956

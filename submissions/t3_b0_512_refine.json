@@ -1,0 +1,26 @@
+{
+  "runs": [
+    "runs\\t3_b0_512"
+  ],
+  "n_models": 5,
+  "n_test": 20,
+  "tta": true,
+  "refine": true,
+  "unit": "pixel",
+  "oof": [
+    {
+      "run": "t3_b0_512",
+      "n": 80,
+      "oof_mcrmse": 0.005819790996611118
+    }
+  ],
+  "out": "submissions\\t3_b0_512_refine.csv",
+  "pred_min": [
+    1197.8650002479553,
+    981.9879641532897
+  ],
+  "pred_max": [
+    1698.5424346923828,
+    1221.3202095031738
+  ]
+}
